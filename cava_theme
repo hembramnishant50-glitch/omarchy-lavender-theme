@@ -1,0 +1,13 @@
+[color]
+gradient = 1
+gradient_count = 8
+
+# Purple Mono Gradient (matched to Waybar accent)
+gradient_color_1 = '#6c5f8a' # dark purple
+gradient_color_2 = '#7a5ea0' # muted purple
+gradient_color_3 = '#988bc7' # lavender
+gradient_color_4 = '#b4befe' # periwinkle
+gradient_color_5 = '#c4a0f0' # waybar accent
+gradient_color_6 = '#cba6f7' # mauve
+gradient_color_7 = '#ddc6fa' # light mauve
+gradient_color_8 = '#e5c4ff' # light purple

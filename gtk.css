@@ -1,0 +1,85 @@
+/* =============================================================================
+   OMARCHY THEME - GTK Catppuccin Mocha (matched to Waybar)
+   ============================================================================= */
+
+@define-color background     #11111b;
+@define-color foreground     #cdd6f4;
+@define-color black          #11111b;
+@define-color red            #f38ba8;
+@define-color green          #a6e3a1;
+@define-color yellow         #f9e2af;
+@define-color blue           #89b4fa;
+@define-color magenta        #cba6f7;
+@define-color cyan           #94e2d5;
+@define-color white          #bac2de;
+@define-color bright_black   #313244;
+@define-color bright_red     #f38ba8;
+@define-color bright_green   #a6e3a1;
+@define-color bright_yellow  #fab387;
+@define-color bright_blue    #89b4fa;
+@define-color bright_magenta #cba6f7;
+@define-color bright_cyan    #89dceb;
+@define-color bright_white   #a6adc8;
+
+@define-color accent_bg_color @magenta;
+@define-color accent_fg_color @background;
+@define-color accent_color @magenta;
+
+@define-color window_bg_color @background;
+@define-color window_fg_color @foreground;
+
+@define-color view_bg_color @background;
+@define-color view_fg_color @foreground;
+@define-color sidebar_bg_color @background;
+@define-color sidebar_fg_color @foreground;
+
+@define-color headerbar_bg_color alpha(@black, 0.8);
+@define-color headerbar_fg_color @foreground;
+@define-color headerbar_backdrop_color @background;
+@define-color headerbar_shade_color @background;
+@define-color card_bg_color alpha(@bright_black, 0.3);
+@define-color card_fg_color @foreground;
+
+@define-color borders @bright_black;
+
+@define-color theme_fg_color @foreground;
+@define-color theme_text_color @foreground;
+@define-color theme_bg_color @background;
+@define-color theme_base_color @black;
+@define-color theme_selected_bg_color @magenta;
+@define-color theme_selected_fg_color @background;
+
+messagedialog {
+  background-color: @background;
+  border: 1px solid @bright_black;
+}
+
+messagedialog label {
+  color: @foreground;
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+messagedialog button {
+  background-color: @black;
+  color: @foreground;
+  border: 1px solid @bright_black;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+messagedialog button:hover {
+  background-color: @magenta;
+  color: @background;
+}
+
+toast {
+  background-color: @black;
+  color: @foreground;
+  border: 1px solid @bright_black;
+  border-radius: 12px;
+}
+
+.svg-icon {
+  filter: sepia(100%) saturate(300%) hue-rotate(240deg) brightness(80%) contrast(100%);
+}
