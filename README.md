@@ -66,21 +66,6 @@ gsettings set org.gnome.desktop.interface cursor-theme 'Catppuccin-Mocha-Mauve-C
 
 ---
 
-## 🖥️ Hyprland
-
-| Setting | Value |
-|---------|-------|
-| Active border | `#cba6f7` |
-| Inactive border | `#313244` |
-| Border width | `2px` |
-| Corner rounding | `14px` |
-| Gaps (inner / outer) | `3px / 6px` |
-| Blur | size `6`, passes `3`, contrast `1.4` |
-| Shadow | range `25`, offset `0x4`, `#00000077` |
-| Animation curve | `overshot` (0.05, 0.9, 0.1, 1.1) |
-
----
-
 ## 🧩 Waybar
 
 <img width="1920" height="42" alt="Image" src="https://github.com/user-attachments/assets/706a3449-6462-460e-a83d-76653ff8de4f" />
@@ -131,6 +116,21 @@ killall -q waybar && nohup waybar > /dev/null 2>&1 &
 | Blue      | `#89b4fa` | Info / links              |
 | Teal      | `#94e2d5` | Cyan highlights           |
 | Peach     | `#fab387` | Orange tones              |
+
+---
+
+## 🖥️ Hyprland
+
+| Setting | Value |
+|---------|-------|
+| Active border | `#cba6f7` |
+| Inactive border | `#313244` |
+| Border width | `2px` |
+| Corner rounding | `14px` |
+| Gaps (inner / outer) | `3px / 6px` |
+| Blur | size `6`, passes `3`, contrast `1.4` |
+| Shadow | range `25`, offset `0x4`, `#00000077` |
+| Animation curve | `overshot` (0.05, 0.9, 0.1, 1.1) |
 
 ---
 
