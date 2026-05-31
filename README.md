@@ -62,19 +62,6 @@ gsettings set org.gnome.desktop.interface cursor-theme 'Catppuccin-Mocha-Mauve-C
 
 <img width="1920" height="42" alt="Image" src="https://github.com/user-attachments/assets/706a3449-6462-460e-a83d-76653ff8de4f" />
 
-```
-[ Menu | Workspaces | Active Window ] — Clock · Updates · Indicators — [ Tray | Speed | Weather | CPU | RAM | BT | Audio | WiFi | Battery ]
-```
-
-### 🌤️ Weather Location
-
-1. Click the **weather icon** in Waybar
-2. **Walker** opens — select **Change location**
-3. Type your city name and select it
-4. Done — weather updates automatically
-
----
-
 ### 🔧 Install Waybar config
 
 ```bash
@@ -89,6 +76,15 @@ chmod +x ~/.config/waybar/scripts/*
 # Restart
 killall -q waybar && nohup waybar > /dev/null 2>&1 &
 ```
+
+---
+
+### 🌤️ Weather Location
+
+1. Click the **weather icon** in Waybar
+2. **Walker** opens — select **Change location**
+3. Type your city name and select it
+4. Done — weather updates automatically
 
 ---
 
