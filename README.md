@@ -91,11 +91,9 @@ gsettings set org.gnome.desktop.interface cursor-theme 'Catppuccin-Mocha-Mauve-C
 
 ### 🌤️ Weather Location
 
-To set your weather location:
-
 1. Click the **weather icon** in Waybar
-2. A **Walker** window opens — start typing your city name
-3. Select your city from the results
+2. **Walker** opens — select **Change location**
+3. Type your city name and select it
 4. Done — weather updates automatically
 
 ---
@@ -133,7 +131,7 @@ killall -q waybar && nohup waybar > /dev/null 2>&1 &
 | Blue      | `#89b4fa` | Info / links              |
 | Teal      | `#94e2d5` | Cyan highlights           |
 | Peach     | `#fab387` | Orange tones              |
- 
+
 ---
 
 ## 🙏 Credits
