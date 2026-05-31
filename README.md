@@ -133,7 +133,7 @@ killall -q waybar && nohup waybar > /dev/null 2>&1 &
 | Blue      | `#89b4fa` | Info / links              |
 | Teal      | `#94e2d5` | Cyan highlights           |
 | Peach     | `#fab387` | Orange tones              |
-
+ 
 ---
 
 ## 🙏 Credits
