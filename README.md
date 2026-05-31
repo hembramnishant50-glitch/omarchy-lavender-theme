@@ -1,7 +1,7 @@
 <p align="center">
   <img src="https://github.com/user-attachments/assets/b516c9cc-e4cc-4c9f-adae-954adcf95e99" width="80%" />
 </p>
-
+ 
 <h1 align="center">Omarchy Lavender</h1>
 
 <p align="center">
