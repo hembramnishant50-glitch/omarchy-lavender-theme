@@ -85,6 +85,17 @@ gsettings set org.gnome.desktop.interface cursor-theme 'Catppuccin-Mocha-Mauve-C
 [ 󰣇 Menu | Workspaces | Active Window ] — Clock · Updates · Indicators — [ Tray | Speed | Weather | CPU | RAM | BT | Audio | WiFi | Battery ]
 ```
 
+### Weather Location
+
+To set your weather location:
+
+1. Click the **weather icon** in Waybar
+2. A **Walker** window opens — start typing your city name
+3. Select your city from the results
+4. Done — weather updates automatically
+
+---
+
 ### Apply the theme's Waybar config
 
 ```bash
@@ -104,86 +115,20 @@ killall -q waybar && nohup waybar > /dev/null 2>&1 &
 
 ## Color Palette
 
-<table>
-  <tr>
-    <th>Color</th>
-    <th>Swatch</th>
-    <th>Hex</th>
-    <th>Usage</th>
-  </tr>
-  <tr>
-    <td>Base</td>
-    <td><code style="background:#11111b;color:#11111b">&nbsp;&nbsp;&nbsp;&nbsp;</code></td>
-    <td><code>#11111b</code></td>
-    <td>Background</td>
-  </tr>
-  <tr>
-    <td>Text</td>
-    <td><code style="background:#cdd6f4;color:#cdd6f4">&nbsp;&nbsp;&nbsp;&nbsp;</code></td>
-    <td><code>#cdd6f4</code></td>
-    <td>Foreground</td>
-  </tr>
-  <tr>
-    <td>Lavender</td>
-    <td><code style="background:#cba6f7;color:#cba6f7">&nbsp;&nbsp;&nbsp;&nbsp;</code></td>
-    <td><code>#cba6f7</code></td>
-    <td>Accent, borders</td>
-  </tr>
-  <tr>
-    <td>Surface 0</td>
-    <td><code style="background:#1e1e2e;color:#1e1e2e">&nbsp;&nbsp;&nbsp;&nbsp;</code></td>
-    <td><code>#1e1e2e</code></td>
-    <td>Elevated surfaces</td>
-  </tr>
-  <tr>
-    <td>Surface 1</td>
-    <td><code style="background:#313244;color:#313244">&nbsp;&nbsp;&nbsp;&nbsp;</code></td>
-    <td><code>#313244</code></td>
-    <td>Selection, dividers</td>
-  </tr>
-  <tr>
-    <td>Surface 2</td>
-    <td><code style="background:#585b70;color:#585b70">&nbsp;&nbsp;&nbsp;&nbsp;</code></td>
-    <td><code>#585b70</code></td>
-    <td>Subtle overlays</td>
-  </tr>
-  <tr>
-    <td>Red</td>
-    <td><code style="background:#f38ba8;color:#f38ba8">&nbsp;&nbsp;&nbsp;&nbsp;</code></td>
-    <td><code>#f38ba8</code></td>
-    <td>Errors</td>
-  </tr>
-  <tr>
-    <td>Green</td>
-    <td><code style="background:#a6e3a1;color:#a6e3a1">&nbsp;&nbsp;&nbsp;&nbsp;</code></td>
-    <td><code>#a6e3a1</code></td>
-    <td>Success</td>
-  </tr>
-  <tr>
-    <td>Yellow</td>
-    <td><code style="background:#f9e2af;color:#f9e2af">&nbsp;&nbsp;&nbsp;&nbsp;</code></td>
-    <td><code>#f9e2af</code></td>
-    <td>Warnings</td>
-  </tr>
-  <tr>
-    <td>Blue</td>
-    <td><code style="background:#89b4fa;color:#89b4fa">&nbsp;&nbsp;&nbsp;&nbsp;</code></td>
-    <td><code>#89b4fa</code></td>
-    <td>Info / links</td>
-  </tr>
-  <tr>
-    <td>Teal</td>
-    <td><code style="background:#94e2d5;color:#94e2d5">&nbsp;&nbsp;&nbsp;&nbsp;</code></td>
-    <td><code>#94e2d5</code></td>
-    <td>Cyan highlights</td>
-  </tr>
-  <tr>
-    <td>Peach</td>
-    <td><code style="background:#fab387;color:#fab387">&nbsp;&nbsp;&nbsp;&nbsp;</code></td>
-    <td><code>#fab387</code></td>
-    <td>Orange tones</td>
-  </tr>
-</table>
+| Color       | Hex       | Usage                     |
+|-------------|-----------|---------------------------|
+| Base        | `#11111b` | Background                |
+| Text        | `#cdd6f4` | Foreground                |
+| Lavender    | `#cba6f7` | Accent, borders, active   |
+| Surface 0   | `#1e1e2e` | Elevated surfaces         |
+| Surface 1   | `#313244` | Selection, dividers       |
+| Surface 2   | `#585b70` | Subtle overlays           |
+| Red         | `#f38ba8` | Errors                    |
+| Green       | `#a6e3a1` | Success                   |
+| Yellow      | `#f9e2af` | Warnings                  |
+| Blue        | `#89b4fa` | Info / links              |
+| Teal        | `#94e2d5` | Cyan highlights           |
+| Peach       | `#fab387` | Orange tones              |
 
 ---
 
