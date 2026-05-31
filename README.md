@@ -98,7 +98,7 @@ gsettings set org.gnome.desktop.interface cursor-theme 'Catppuccin-Mocha-Mauve-C
 
 ---
 
-### 🔧 Apply Waybar config
+### 🔧 Install Waybar config
 
 ```bash
 # Back up your existing config
