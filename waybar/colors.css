@@ -1,0 +1,50 @@
+@define-color DARK #11111b;
+@define-color DARK1 #181825;
+@define-color DARK2 #313244;
+@define-color DARK3 #45475a;
+
+@define-color WHITE #cdd6f4;
+
+@define-color GREEN0 #b8e6a8;
+@define-color GREEN #a6e3a1;
+@define-color GREEN1 #6c9f68;
+@define-color GREEN2 #1c2e1a;
+
+@define-color RED0 #f5a0b8;
+@define-color RED #f38ba8;
+@define-color RED1 #9b5870;
+@define-color RED2 #331b24;
+
+@define-color ORANGE0 #f9c096;
+@define-color ORANGE #fab387;
+@define-color ORANGE1 #a17357;
+@define-color ORANGE2 #34261c;
+
+@define-color YELLOW0 #fce8b8;
+@define-color YELLOW #f9e2af;
+@define-color YELLOW1 #a6936e;
+@define-color YELLOW2 #333025;
+
+@define-color PURPLE0 #ccc8fa;
+@define-color PURPLE #b4befe;
+@define-color PURPLE1 #7478a1;
+@define-color PURPLE2 #262840;
+
+@define-color BLUE0 #a0dce8;
+@define-color BLUE #89dceb;
+@define-color BLUE1 #588e96;
+@define-color BLUE2 #1c2e32;
+
+@define-color GRAY0 #6c7086;
+@define-color GRAY #585b70;
+@define-color GRAY1 #313244;
+@define-color GRAY2 #181825;
+
+@define-color ACCENT0 #ddc6fa;
+@define-color ACCENT #cba6f7;
+@define-color ACCENT1 #7a5ea0;
+@define-color ACCENT2 #2a1e3a;
+
+@define-color BG @DARK;
+@define-color FG @WHITE;
+@define-color BOR @ACCENT;
