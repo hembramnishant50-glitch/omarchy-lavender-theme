@@ -1,0 +1,127 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "auto",
+    "source": "/home/nishant/.config/fastfetch/hollow-knight.png",
+    "width": 30,
+    "padding": {
+      "top": 2,
+      "right": 4,
+      "left": 2
+    }
+  },
+  "display": {
+    "separator": "",
+    "key": {
+      "width": 10
+    }
+  },
+  "modules": [
+    {
+      "type": "title",
+      "format": "\u001b[38;2;203;166;247m\uf313 \u001b[38;2;245;194;231m{user-name}\u001b[38;2;203;166;247m@\u001b[38;2;245;194;231m{host-name}"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "\u001b[38;2;203;166;247m\ufb31\u001b[38;2;196;160;240m\ufb31\u001b[38;2;180;190;254m\ufb31\u001b[38;2;245;194;231m\ufb31\u001b[38;2;203;166;247m\ufb31\u001b[38;2;196;160;240m\ufb31\u001b[38;2;180;190;254m\ufb31\u001b[38;2;245;194;231m\ufb31\u001b[38;2;203;166;247m\ufb31\u001b[38;2;196;160;240m\ufb31\u001b[38;2;180;190;254m\ufb31\u001b[38;2;245;194;231m\ufb31\u001b[38;2;203;166;247m\ufb31\u001b[38;2;196;160;240m\ufb31\u001b[38;2;180;190;254m\ufb31\u001b[38;2;245;194;231m\ufb31\u001b[38;2;203;166;247m\ufb31\u001b[38;2;196;160;240m\ufb31\u001b[38;2;180;190;254m\ufb31\u001b[38;2;245;194;231m\ufb31\u001b[38;2;203;166;247m\ufb31\u001b[38;2;196;160;240m\ufb31\u001b[38;2;180;190;254m\ufb31\u001b[38;2;245;194;231m\ufb31\u001b[38;2;203;166;247m\ufb31\u001b[38;2;196;160;240m\ufb31\u001b[38;2;180;190;254m\ufb31\u001b[38;2;245;194;231m\ufb31\u001b[38;2;203;166;247m\ufb31\u001b[38;2;196;160;240m\ufb31\u001b[38;2;180;190;254m\ufb31\u001b[38;2;245;194;231m\ufb31\u001b[38;2;203;166;247m\ufb31\u001b[38;2;196;160;240m\ufb31"
+    },
+    "break",
+    {
+      "type": "host",
+      "key": "\uf109",
+      "keyColor": "#cba6f7"
+    },
+    {
+      "type": "cpu",
+      "key": "\uf4bc",
+      "showPeCoreCount": true,
+      "keyColor": "#c4a0f0"
+    },
+    {
+      "type": "gpu",
+      "key": "\ue9c9",
+      "detectionMethod": "pci",
+      "keyColor": "#b4befe"
+    },
+    {
+      "type": "display",
+      "key": "\ufb04",
+      "keyColor": "#cba6f7"
+    },
+    {
+      "type": "memory",
+      "key": "\uefc5",
+      "keyColor": "#c4a0f0"
+    },
+    {
+      "type": "disk",
+      "key": "\uf04a",
+      "keyColor": "#b4befe"
+    },
+    {
+      "type": "swap",
+      "key": "\uf0e1",
+      "keyColor": "#cba6f7"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "\u001b[38;2;203;166;247m\ufb31\u001b[38;2;196;160;240m\ufb31\u001b[38;2;180;190;254m\ufb31\u001b[38;2;245;194;231m\ufb31\u001b[38;2;203;166;247m\ufb31\u001b[38;2;196;160;240m\ufb31\u001b[38;2;180;190;254m\ufb31\u001b[38;2;245;194;231m\ufb31\u001b[38;2;203;166;247m\ufb31\u001b[38;2;196;160;240m\ufb31\u001b[38;2;180;190;254m\ufb31\u001b[38;2;245;194;231m\ufb31\u001b[38;2;203;166;247m\ufb31\u001b[38;2;196;160;240m\ufb31\u001b[38;2;180;190;254m\ufb31\u001b[38;2;245;194;231m\ufb31\u001b[38;2;203;166;247m\ufb31\u001b[38;2;196;160;240m\ufb31\u001b[38;2;180;190;254m\ufb31\u001b[38;2;245;194;231m\ufb31\u001b[38;2;203;166;247m\ufb31\u001b[38;2;196;160;240m\ufb31\u001b[38;2;180;190;254m\ufb31\u001b[38;2;245;194;231m\ufb31\u001b[38;2;203;166;247m\ufb31\u001b[38;2;196;160;240m\ufb31\u001b[38;2;180;190;254m\ufb31\u001b[38;2;245;194;231m\ufb31\u001b[38;2;203;166;247m\ufb31\u001b[38;2;196;160;240m\ufb31\u001b[38;2;180;190;254m\ufb31\u001b[38;2;245;194;231m\ufb31\u001b[38;2;203;166;247m\ufb31\u001b[38;2;196;160;240m\ufb31"
+    },
+    "break",
+    {
+      "type": "command",
+      "key": "\ue900",
+      "keyColor": "#cba6f7",
+      "text": "version=$(omarchy-version); echo \"Omarchy $version\""
+    },
+    {
+      "type": "command",
+      "key": "\ue712",
+      "keyColor": "#c4a0f0",
+      "text": "branch=$(omarchy-version-branch); echo \"$branch\""
+    },
+    {
+      "type": "kernel",
+      "key": "\uf5bf",
+      "keyColor": "#b4befe"
+    },
+    {
+      "type": "wm",
+      "key": "\uf489",
+      "keyColor": "#cba6f7"
+    },
+    {
+      "type": "terminal",
+      "key": "\uf120",
+      "keyColor": "#c4a0f0"
+    },
+    {
+      "type": "packages",
+      "key": "\ueb9f",
+      "keyColor": "#b4befe"
+    },
+    {
+      "type": "terminalfont",
+      "key": "\uf031",
+      "keyColor": "#cba6f7"
+    },
+    {
+      "type": "command",
+      "key": "\uf039",
+      "keyColor": "#c4a0f0",
+      "text": "theme=$(omarchy-theme-current); echo \"$theme\""
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "\u001b[38;2;203;166;247m\ufb31\u001b[38;2;180;190;254m\ufb31\u001b[38;2;245;194;231m\ufb31\u001b[38;2;203;166;247m\ufb31\u001b[38;2;180;190;254m\ufb31\u001b[38;2;245;194;231m\ufb31\u001b[38;2;203;166;247m\ufb31\u001b[38;2;180;190;254m\ufb31\u001b[38;2;245;194;231m\ufb31\u001b[38;2;203;166;247m\ufb31\u001b[38;2;180;190;254m\ufb31\u001b[38;2;245;194;231m\ufb31\u001b[38;2;203;166;247m\ufb31\u001b[38;2;180;190;254m\ufb31\u001b[38;2;245;194;231m\ufb31\u001b[38;2;203;166;247m\ufb31\u001b[38;2;180;190;254m\ufb31\u001b[38;2;245;194;231m\ufb31\u001b[38;2;203;166;247m\ufb31\u001b[38;2;180;190;254m\ufb31\u001b[38;2;245;194;231m\ufb31\u001b[38;2;203;166;247m\ufb31\u001b[38;2;180;190;254m\ufb31\u001b[38;2;245;194;231m\ufb31\u001b[38;2;203;166;247m\ufb31\u001b[38;2;180;190;254m\ufb31\u001b[38;2;245;194;231m\ufb31\u001b[38;2;203;166;247m\ufb31\u001b[38;2;180;190;254m\ufb31\u001b[38;2;245;194;231m\ufb31\u001b[38;2;203;166;247m\ufb31\u001b[38;2;180;190;254m\ufb31\u001b[38;2;245;194;231m\ufb31\u001b[38;2;203;166;247m\ufb31"
+    },
+    "break",
+    {
+      "type": "colors",
+      "symbol": "block"
+    }
+  ]
+}
