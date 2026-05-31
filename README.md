@@ -41,15 +41,7 @@
 omarchy-theme-install https://github.com/hembramnishant50-glitch/omarchy-lavender-theme.git
 ```
 
-<details>
-<summary>Manual installation</summary>
 
-```bash
-git clone https://github.com/hembramnishant50-glitch/omarchy-lavender-theme.git
-cp -r omarchy-lavender-theme ~/.config/omarchy/themes/lavender
-omarchy-theme-set lavender
-```
-</details>
 
 ### 🎨 Prerequisites — Icons & Cursors
 
@@ -134,9 +126,12 @@ killall -q waybar && nohup waybar > /dev/null 2>&1 &
 
 ---
 
-## 🙏 Credits
+## 🤝 Contributing
 
-- [Catppuccin](https://github.com/catppuccin/catppuccin) — the original Mocha color scheme
-- [Omarchy](https://github.com/anomalyco/omarchy) — desktop environment
-- [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) — icons
-- [Catppuccin Cursors](https://github.com/catppuccin/cursors) — cursor theme
+Pull requests are welcome. For major changes, please open an issue first to discuss what you'd like to change.
+
+1. Fork the repo
+2. Create your feature branch: `git checkout -b feat/my-change`
+3. Commit your changes: `git commit -m 'feat: add my change'`
+4. Push: `git push origin feat/my-change`
+5. Open a Pull Request
