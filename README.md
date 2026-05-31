@@ -1,7 +1,7 @@
 <p align="center">
   <img src="https://github.com/user-attachments/assets/b516c9cc-e4cc-4c9f-adae-954adcf95e99" width="80%" />
 </p>
- 
+
 <h1 align="center">Omarchy Lavender</h1>
 
 <p align="center">
@@ -23,15 +23,25 @@
 
 ---
 
-## Preview
+## 📷 Preview
 
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/315b732b-52f9-44c7-a708-1a8bcc51b0ac" />
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/52c32d78-c749-4e70-b94e-3da11da2c178" />
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/ab5f296c-0670-4136-a352-d091274938b5" />
+<!-- Small UI Desktop Grid -->
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9b2c57c7-2f93-46e3-a11b-d5ae2584e0bd" width="48%" />
+  <img src="https://github.com/user-attachments/assets/d251947f-19d0-4250-9b22-52e82d997fce" width="48%" />
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3b426c85-6441-429b-aa31-f9cb4d8587c8" width="48%" />
+  <img src="https://github.com/user-attachments/assets/ba641a85-1219-4741-9ea4-b7bc1a3d123c" width="48%" />
+</p>
+<p align="center">
+  <img alt="Image" src="https://github.com/user-attachments/assets/c5ca0c5a-8ee9-446f-94f4-f18edd92ef0a" width="48%" />
+  <img src="https://github.com/user-attachments/assets/e0bcab31-f896-4fc7-afbd-818a18dd6752" width="48%" />
+</p>
 
 ---
 
-## Quick Install
+## ⚡ Quick Install
 
 ```bash
 omarchy-theme-install https://github.com/hembramnishant50-glitch/omarchy-lavender-theme.git
@@ -47,7 +57,7 @@ omarchy-theme-set lavender
 ```
 </details>
 
-### Prerequisites — Icons & Cursors
+### 🎨 Prerequisites — Icons & Cursors
 
 ```bash
 # Papirus Dark icons with Violet folders
@@ -62,7 +72,7 @@ gsettings set org.gnome.desktop.interface cursor-theme 'Catppuccin-Mocha-Mauve-C
 
 ---
 
-## Hyprland
+## 🖥️ Hyprland
 
 | Setting | Value |
 |---------|-------|
@@ -77,15 +87,15 @@ gsettings set org.gnome.desktop.interface cursor-theme 'Catppuccin-Mocha-Mauve-C
 
 ---
 
-## Waybar
+## 🧩 Waybar
 
 <img width="1920" height="42" alt="Image" src="https://github.com/user-attachments/assets/706a3449-6462-460e-a83d-76653ff8de4f" />
 
 ```
-[ 󰣇 Menu | Workspaces | Active Window ] — Clock · Updates · Indicators — [ Tray | Speed | Weather | CPU | RAM | BT | Audio | WiFi | Battery ]
+[ Menu | Workspaces | Active Window ] — Clock · Updates · Indicators — [ Tray | Speed | Weather | CPU | RAM | BT | Audio | WiFi | Battery ]
 ```
 
-### Weather Location
+### 🌤️ Weather Location
 
 To set your weather location:
 
@@ -96,7 +106,7 @@ To set your weather location:
 
 ---
 
-### Apply the theme's Waybar config
+### 🔧 Apply Waybar config
 
 ```bash
 # Back up your existing config
@@ -113,26 +123,26 @@ killall -q waybar && nohup waybar > /dev/null 2>&1 &
 
 ---
 
-## Color Palette
+## 🎨 Color Palette
 
-| Color       | Hex       | Usage                     |
-|-------------|-----------|---------------------------|
-| Base        | `#11111b` | Background                |
-| Text        | `#cdd6f4` | Foreground                |
-| Lavender    | `#cba6f7` | Accent, borders, active   |
-| Surface 0   | `#1e1e2e` | Elevated surfaces         |
-| Surface 1   | `#313244` | Selection, dividers       |
-| Surface 2   | `#585b70` | Subtle overlays           |
-| Red         | `#f38ba8` | Errors                    |
-| Green       | `#a6e3a1` | Success                   |
-| Yellow      | `#f9e2af` | Warnings                  |
-| Blue        | `#89b4fa` | Info / links              |
-| Teal        | `#94e2d5` | Cyan highlights           |
-| Peach       | `#fab387` | Orange tones              |
+| Color     | Hex       | Usage                     |
+|-----------|-----------|---------------------------|
+| Base      | `#11111b` | Background                |
+| Text      | `#cdd6f4` | Foreground                |
+| Lavender  | `#cba6f7` | Accent, borders, active   |
+| Surface 0 | `#1e1e2e` | Elevated surfaces         |
+| Surface 1 | `#313244` | Selection, dividers       |
+| Surface 2 | `#585b70` | Subtle overlays           |
+| Red       | `#f38ba8` | Errors                    |
+| Green     | `#a6e3a1` | Success                   |
+| Yellow    | `#f9e2af` | Warnings                  |
+| Blue      | `#89b4fa` | Info / links              |
+| Teal      | `#94e2d5` | Cyan highlights           |
+| Peach     | `#fab387` | Orange tones              |
 
 ---
 
-## Credits
+## 🙏 Credits
 
 - [Catppuccin](https://github.com/catppuccin/catppuccin) — the original Mocha color scheme
 - [Omarchy](https://github.com/anomalyco/omarchy) — desktop environment
