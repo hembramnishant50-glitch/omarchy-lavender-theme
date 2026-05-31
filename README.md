@@ -25,18 +25,12 @@
 
 ## 📷 Preview
 
-<!-- Small UI Desktop Grid -->
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/9b2c57c7-2f93-46e3-a11b-d5ae2584e0bd" width="48%" />
-  <img src="https://github.com/user-attachments/assets/d251947f-19d0-4250-9b22-52e82d997fce" width="48%" />
+  <img src="https://github.com/user-attachments/assets/315b732b-52f9-44c7-a708-1a8bcc51b0ac" width="48%" />
+  <img src="https://github.com/user-attachments/assets/52c32d78-c749-4e70-b94e-3da11da2c178" width="48%" />
 </p>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/3b426c85-6441-429b-aa31-f9cb4d8587c8" width="48%" />
-  <img src="https://github.com/user-attachments/assets/ba641a85-1219-4741-9ea4-b7bc1a3d123c" width="48%" />
-</p>
-<p align="center">
-  <img alt="Image" src="https://github.com/user-attachments/assets/c5ca0c5a-8ee9-446f-94f4-f18edd92ef0a" width="48%" />
-  <img src="https://github.com/user-attachments/assets/e0bcab31-f896-4fc7-afbd-818a18dd6752" width="48%" />
+  <img src="https://github.com/user-attachments/assets/ab5f296c-0670-4136-a352-d091274938b5" width="48%" />
 </p>
 
 ---
