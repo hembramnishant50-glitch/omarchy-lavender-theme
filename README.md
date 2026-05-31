@@ -5,7 +5,7 @@
 <h1 align="center">Omarchy Lavender</h1>
 
 <p align="center">
-  A <b>Catppuccin Mocha</b>–inspired purple/lavender theme for <a href="https://github.com/anomalyco/omarchy">Omarchy</a>
+  A lavender theme for <a href="https://github.com/anomalyco/omarchy">Omarchy</a>
 </p>
 
 <p align="center">
