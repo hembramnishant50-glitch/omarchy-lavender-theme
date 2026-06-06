@@ -313,6 +313,7 @@ get_app_info() {
     arc*|Arc*)                   app_name=" Arc" ;;
     epiphany*|org.gnome.Epiphany*) app_name=" Epiphany" ;;
     librewolf*|LibreWolf*)       app_name=" LibreWolf" ;;
+    zen*|Zen*)                   app_name=" Zen" ;;
 
     # ----- TERMINALS -----
     ghostty*|com.mitchellh.ghostty*) app_name=" Ghostty" ;;
@@ -545,6 +546,10 @@ get_app_info() {
     pcsx2*|Pcsx2*)               app_name=" PCSX2" ;;
     duckstation*|DuckStation*)   app_name=" DuckStation" ;;
     mame*|MAME*)                 app_name=" MAME" ;;
+    nvidia-geforce-now*|geforcenow*|GeForceNOW*) app_name=" GeForce NOW" ;;
+    moonlight*|Moonlight*)       app_name=" Moonlight" ;;
+    xbox*cloud*|XboxCloud*)      app_name=" Xbox Cloud" ;;
+    crush*|Crush*)               app_name=" Crush" ;;
 
     # ----- VIRTUALIZATION -----
     virt-manager*|VirtManager*)  app_name=" Virt Manager" ;;
@@ -555,6 +560,7 @@ get_app_info() {
 
     # ----- DEVELOPMENT & DEVOPS -----
     docker*|Docker*)             app_name=" Docker" ;;
+    docker-db*|DockerDB*)        app_name=" Docker DB" ;;
     podman*|Podman*)             app_name=" Podman" ;;
     lazydocker*|LazyDocker*)     app_name=" Lazydocker" ;;
     portainer*|Portainer*)       app_name=" Portainer" ;;
@@ -568,6 +574,22 @@ get_app_info() {
     android-studio*|AndroidStudio*) app_name=" Android Studio" ;;
     arduino*|Arduino*|arduino-ide*) app_name=" Arduino" ;;
     rpi-imager*|RaspberryPiImager*) app_name=" Raspberry Pi" ;;
+    emacs*|Emacs*)               app_name=" Emacs" ;;
+    neovide*|Neovide*)           app_name=" Neovide" ;;
+    once*|Once*|ONCE*)           app_name=" ONCE" ;;
+    ruby*|Ruby*)                 app_name=" Ruby" ;;
+    rails*|Rails*|ruby-on-rails*) app_name=" Rails" ;;
+    javascript*|node*|Node*|npm*|Npm*|yarn*|Yarn*|bun*|Bun*) app_name=" JS" ;;
+    go*|Go*|golang*)             app_name=" Go" ;;
+    php*|PHP*|Php*)              app_name=" PHP" ;;
+    python*|Python*|python3*)    app_name=" Python" ;;
+    elixir*|Elixir*)             app_name=" Elixir" ;;
+    zig*|Zig*)                   app_name=" Zig" ;;
+    rust*|Rust*|rustc*|rustup*)  app_name=" Rust" ;;
+    dotnet*|Dotnet*|dotnet*)     app_name=" .NET" ;;
+    ocaml*|Ocaml*|OCaml*)        app_name=" OCaml" ;;
+    clojure*|Clojure*)           app_name=" Clojure" ;;
+    scala*|Scala*)               app_name=" Scala" ;;
 
     # ----- SCIENCE & 3D -----
     blender*|Blender*|org.blender.Blender*) app_name=" Blender" ;;
@@ -612,6 +634,8 @@ get_app_info() {
     veracrypt*|VeraCrypt*)        app_name=" VeraCrypt" ;;
     wireguard*|WireGuard*)        app_name=" WireGuard" ;;
     openvpn*|OpenVPN*)            app_name=" OpenVPN" ;;
+    nordvpn*|NordVPN*)            app_name="󰒄 NordVPN" ;;
+    tailscale*|Tailscale*)        app_name="󰒄 Tailscale" ;;
     mullvad*|Mullvad*)            app_name="󰒄 Mullvad" ;;
     onionshare*|OnionShare*)      app_name=" OnionShare" ;;
     session*|Session*)            app_name=" Session" ;;
@@ -647,6 +671,11 @@ get_app_info() {
     bitwarden*|Bitwarden*|com.bitwarden.desktop*) app_name=" Bitwarden" ;;
     1password*|1Password*)       app_name=" 1Password" ;;
     keepassxc*|KeePassXC*)       app_name=" KeePassXC" ;;
+
+    # ----- AI & ML -----
+    lmstudio*|LMStudio*|com.lmstudio.LMStudio*) app_name="󰚩 LM Studio" ;;
+    ollama*|Ollama*)             app_name="󰚩 Ollama" ;;
+    dictation*|Dictation*|omarchy-dictation*) app_name="󰎙 Dictation" ;;
 
     # ----- NOTE TAKING -----
     obsidian*|Obsidian*|md.obsidian.Obsidian*) app_name=" Obsidian" ;;
