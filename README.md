@@ -5,7 +5,7 @@
 <h1 align="center">✨ Omarchy Lavender ✨</h1>
 
 <p align="center">
-  <b>A lavender-tinted rice for <a href="https://github.com/anomalyco/omarchy">Omarchy</a></b>
+  <b>A lavender-tinted rice for <a href="https://omarchy.org/">Omarchy</a></b>
   <br>
   <code>omarchy-theme-set lavender</code>
 </p>
