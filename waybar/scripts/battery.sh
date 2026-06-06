@@ -23,12 +23,22 @@ TEMP=$(echo "$DATA" | grep -i 'temperature' | awk '{print $2}' | head -1)
 [ -z "$CAP" ] && CAP=0
 [ -n "$E_FULL" ] && [ -n "$E_DESIGN" ] && [ "$E_DESIGN" != "0" ] && HEALTH=$(echo "scale=1; $E_FULL / $E_DESIGN * 100" | bc -l 2>/dev/null | sed 's/\.0$//') || HEALTH=""
 
+IDX=$(( CAP < 100 ? CAP / 10 : 9 ))
+CHARGING_ICONS=("󰢜" "󰂆" "󰂇" "󰂈" "󰢝" "󰂉" "󰢞" "󰂊" "󰂋" "󰂅")
+
 case "$STAT" in
-  charging) ICON="󰂄"; MSG="Charging" ;;
-  fully-charged) ICON="󰁹"; MSG="Full" ;;
+  charging)
+    ICON="${CHARGING_ICONS[$IDX]}"
+    MSG="Charging"
+    ;;
+  fully-charged)
+    ICON="${CHARGING_ICONS[$IDX]}"
+    MSG="Full"
+    ;;
   discharging)
+    DEFAULT_ICONS=("󰁺" "󰁻" "󰁼" "󰁽" "󰁾" "󰁿" "󰂀" "󰂁" "󰂂" "󰁹")
+    ICON="${DEFAULT_ICONS[$IDX]}"
     MSG="Discharging"
-    [ "$CAP" -ge 95 ] && ICON="󰁹" || [ "$CAP" -ge 75 ] && ICON="󰂀" || [ "$CAP" -ge 55 ] && ICON="󰁿" || [ "$CAP" -ge 35 ] && ICON="󰁽" || [ "$CAP" -ge 15 ] && ICON="󰁻" || ICON="󰎁"
     ;;
   *) ICON="󰂎"; MSG="$STAT" ;;
 esac
