@@ -1,0 +1,191 @@
+{
+  "layer": "top",
+  "height": 28,
+  "modules-left": [
+    "custom/omarchy",
+    "hyprland/workspaces",
+    "custom/windows_info"
+  ],
+  "modules-center": ["clock", "custom/update", "custom/voxtype", "custom/screenrecording-indicator", "custom/notification-silencing-indicator", "custom/idle-indicator"],
+  "modules-right": [
+    "tray",
+    "custom/speed",
+    "custom/weather",
+    "cpu",
+    "memory",
+    "bluetooth",
+    "pulseaudio",
+    "custom/wifi",
+    "custom/battery"
+  ],
+  // -- Update
+  "custom/update": {
+    "format": "{}",
+    "return-type": "json",
+    "exec": "~/.config/waybar/scripts/update.sh",
+    "on-click": "omarchy-launch-floating-terminal-with-presentation omarchy-update",
+    "signal": 7,
+    "interval": 21600
+  },
+  // -- Weather
+  "custom/weather": {
+    "exec": "~/.config/waybar/scripts/weather.sh",
+    "return-type": "json",
+    "format": "{}",
+    "tooltip": true,
+    "interval": 900,
+    "on-click": "~/.config/waybar/scripts/weather.sh --menu",
+    "on-click-right": "~/.config/waybar/scripts/weather.sh --toggle-unit",
+    "signal": 8
+  },
+  // -- Tray
+  "tray": {
+    "icon-size": 16,
+    "spacing": 10
+  },
+  // -- Internet Speed
+  "custom/speed": {
+    "exec": "~/.config/waybar/scripts/speed.sh",
+    "interval": 2,
+    "format": "{}"
+  },
+  // -- Clock
+  "clock": {
+    "format": "<span color='#c4a0f0'>󰥔</span>  {:%I:%M %p}",
+    "interval": 1,
+    "tooltip-format": "<span size='large' color='#c4a0f0'><b>{:%B %Y}</b></span>\n\n<span font_family='monospace' size='medium'><b>{calendar}</b></span>",
+    "calendar": {
+      "mode": "month",
+      "weeks-pos": "none",
+      "on-scroll": 1,
+      "format": {
+        "months":   "<span color='#c4a0f0'><b>{}</b></span>",
+        "weekdays": "<span color='#8c92a3'><b>{}</b></span>",
+        "days":     "<span color='#dcd6d6'>{}</span>",
+        "weeks":    "<span color='#8c92a3'><b>W{}</b></span>",
+        "today":    "<span color='#232829' background='#c4a0f0'><b> {} </b></span>"
+      }
+    },
+    "on-click": "notify-send \"$(date '+%A, %d %B %Y')\"",
+    "on-click-right": "omarchy-launch-floating-terminal-with-presentation omarchy-tz-select"
+  },
+  // -- Screen Recording
+  "custom/screenrecording-indicator": {
+    "on-click": "omarchy-capture-screenrecording",
+    "exec": "~/.config/waybar/scripts/screen-recording.sh",
+    "signal": 8,
+    "return-type": "json",
+    "interval": 5
+  },
+  // -- Voice Typing
+  "custom/voxtype": {
+    "exec": "omarchy-voxtype-status",
+    "return-type": "json",
+    "format": "{icon}",
+    "format-icons": {
+      "idle": "",
+      "recording": "󰍬",
+      "transcribing": "󰔟"
+    },
+    "interval": 5,
+    "signal": 11
+  },
+  // -- Notification Silencing
+  "custom/notification-silencing-indicator": {
+    "on-click": "omarchy-toggle-notification-silencing",
+    "exec": "~/.config/waybar/scripts/notification-silencing.sh",
+    "signal": 10,
+    "return-type": "json",
+    "interval": 5
+  },
+  // -- Idle / Screen Lock
+  "custom/idle-indicator": {
+    "on-click": "omarchy-toggle-idle",
+    "exec": "~/.config/waybar/scripts/idle.sh",
+    "signal": 9,
+    "return-type": "json",
+    "interval": 5
+  },
+  // -- Workspaces
+  "hyprland/workspaces": {
+    "disable-scroll": false,
+    "all-outputs": true,
+    "warp-on-scroll": false,
+    "format": "{name}",
+    "persistent-workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": []
+    },
+    "on-click": "activate"
+  },
+  // -- CPU
+  "cpu": {
+    "format": "<span color='#c4a0f0'></span>  {usage}%",
+    "interval": 5,
+    "on-click": "omarchy-launch-or-focus-tui btop"
+  },
+  // -- Memory
+  "memory": {
+    "format": "<span color='#c4a0f0'></span>  {used:0.0f}/{total:0.0f}G",
+    "interval": 30,
+    "on-click": "omarchy-launch-or-focus-tui btop"
+  },
+  // -- Bluetooth
+  "bluetooth": {
+    "format": "<span color='#c4a0f0'></span>",
+    "format-disabled": "",
+    "format-off": "<span color='#6c7086'>󰂲</span>",
+    "format-no-controller": "",
+    "format-connected": "<span color='#c4a0f0'></span>",
+    "tooltip-format": "<span size='large' color='#c4a0f0'><b>  Bluetooth</b></span>\n<span color='#8c92a3'>Controller: {controller_alias}</span>\n\n<span color='#c4a0f0'><b>DEVICE</b></span>\n<span color='#dcd6d6' font_family='monospace'>  🆔 Address: {controller_address}</span>",
+    "tooltip-format-connected": "<span size='large' color='#c4a0f0'><b>  Bluetooth</b></span>\n<span color='#8c92a3'>{controller_alias}  •  Connected</span>\n\n<span color='#c4a0f0'><b>DEVICES</b></span>\n<span color='#dcd6d6' font_family='monospace'>{device_enumerate}</span>",
+    "tooltip-format-enumerate-connected": "    {device_alias}  ({device_battery_percentage}%)",
+    "on-click": "omarchy-launch-bluetooth",
+    "on-click-right": "~/.config/waybar/scripts/toggle-bt.sh"
+  },
+  // -- Audio
+  "pulseaudio": {
+    "format": "<span color='#c4a0f0'>󰕾</span> {volume}%",
+    "format-muted": "<span color='#6c7086'>󰝟</span>",
+    "tooltip-format": "<span size='large' color='#c4a0f0'><b>  Audio</b></span>\n<span color='#8c92a3'>{desc}</span>\n\n<span color='#c4a0f0'><b>OUTPUT</b></span>\n<span color='#dcd6d6' font_family='monospace'>  🔊 Volume: {volume}%</span>",
+    "scroll-step": 5,
+    "reverse-scrolling": 1,
+    "on-click": "omarchy-launch-audio",
+    "on-click-right": "swayosd-client --output-volume mute-toggle"
+  },
+  // -- WiFi
+  "custom/wifi": {
+    "format": "{}",
+    "exec": "~/.config/waybar/scripts/wifi.sh",
+    "return-type": "json",
+    "interval": 10,
+    "on-click": "omarchy-launch-wifi",
+    "on-click-right": "nm-connection-editor"
+  },
+  // -- Battery
+  "custom/battery": {
+    "format": "{}",
+    "exec": "~/.config/waybar/scripts/battery.sh",
+    "return-type": "json",
+    "interval": 30,
+    "on-click": "omarchy-menu power",
+    "on-click-right": "notify-send -u low \"$(omarchy-battery-status)\""
+  },
+  // -- Active window info
+  "custom/windows_info": {
+    "format": "{}",
+    "return-type": "json",
+    "exec": "~/.config/waybar/scripts/windows_info.sh",
+    "interval": 1,
+    "on-click": "~/.config/waybar/scripts/spotify-toggle.sh"
+  },
+  // -- Omarchy App Menu
+  "custom/omarchy": {
+    "format": "<span font='omarchy'>\ue900</span>",
+    "on-click": "omarchy-menu",
+    "on-click-right": "xdg-terminal-exec",
+    "tooltip-format": "Omarchy Menu\n\nSuper + Alt + Space"
+  }
+}
