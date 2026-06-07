@@ -150,31 +150,31 @@ killall -q waybar && nohup waybar > /dev/null 2>&1 &
 ### 🖼️ Wallpaper Collection
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/1a7a3249-0deb-493d-beea-56a4399adf00" height="160px" />
-  <img src="https://github.com/user-attachments/assets/a18d4711-1dab-4c19-80a8-a25b2d9e4827" height="160px" />
-  <img src="https://github.com/user-attachments/assets/71c1e93c-777a-4d63-bfbc-999b493db789" height="160px" />
-  <img src="https://github.com/user-attachments/assets/58fe5cb3-bf9d-42e3-af71-6b853095fdd8" height="160px" />
+  <img src="https://github.com/user-attachments/assets/1a7a3249-0deb-493d-beea-56a4399adf00" width="24%" />
+  <img src="https://github.com/user-attachments/assets/a18d4711-1dab-4c19-80a8-a25b2d9e4827" width="24%" />
+  <img src="https://github.com/user-attachments/assets/71c1e93c-777a-4d63-bfbc-999b493db789" width="24%" />
+  <img src="https://github.com/user-attachments/assets/58fe5cb3-bf9d-42e3-af71-6b853095fdd8" width="24%" />
 </p>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/77e71d0a-b4c3-4ee3-92f0-7a5bd41385f2" height="160px" />
-  <img src="https://github.com/user-attachments/assets/0d02189a-1933-4b59-9ae8-947c2a51824a" height="160px" />
-  <img src="https://github.com/user-attachments/assets/5b101299-07b8-44ad-87ee-fc2849c1565d" height="160px" />
-  <img src="https://github.com/user-attachments/assets/215030f8-482e-4c9e-9f85-f0f55f2b592a" height="160px" />
+  <img src="https://github.com/user-attachments/assets/77e71d0a-b4c3-4ee3-92f0-7a5bd41385f2" width="24%" />
+  <img src="https://github.com/user-attachments/assets/0d02189a-1933-4b59-9ae8-947c2a51824a" width="24%" />
+  <img src="https://github.com/user-attachments/assets/5b101299-07b8-44ad-87ee-fc2849c1565d" width="24%" />
+  <img src="https://github.com/user-attachments/assets/215030f8-482e-4c9e-9f85-f0f55f2b592a" width="24%" />
 </p>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/aed85e9f-44b5-40dd-b671-2df50e5779ca" height="160px" />
-  <img src="https://github.com/user-attachments/assets/04d68551-946e-4f1a-bfb0-cd6924b2d0ce" height="160px" />
-  <img src="https://github.com/user-attachments/assets/8428fe18-9519-4807-a69e-e76295096f08" height="160px" />
-  <img src="https://github.com/user-attachments/assets/8b69a641-f7a7-452c-959e-7e8040b1a2bd" height="160px" />
+  <img src="https://github.com/user-attachments/assets/aed85e9f-44b5-40dd-b671-2df50e5779ca" width="24%" />
+  <img src="https://github.com/user-attachments/assets/04d68551-946e-4f1a-bfb0-cd6924b2d0ce" width="24%" />
+  <img src="https://github.com/user-attachments/assets/8428fe18-9519-4807-a69e-e76295096f08" width="24%" />
+  <img src="https://github.com/user-attachments/assets/8b69a641-f7a7-452c-959e-7e8040b1a2bd" width="24%" />
 </p>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/002f1833-b336-4a58-839f-346af63231f5" height="160px" />
-  <img src="https://github.com/user-attachments/assets/5e87f572-1c1e-4355-b375-5a46280cfcc1" height="160px" />
-  <img src="https://github.com/user-attachments/assets/c9d94a64-e3ff-4f30-98c4-4cfd0b3fbb53" height="160px" />
-  <img src="https://github.com/user-attachments/assets/83c8284a-9c3a-4d3f-97ab-022ac4b8485b" height="160px" />
+  <img src="https://github.com/user-attachments/assets/002f1833-b336-4a58-839f-346af63231f5" width="24%" />
+  <img src="https://github.com/user-attachments/assets/5e87f572-1c1e-4355-b375-5a46280cfcc1" width="24%" />
+  <img src="https://github.com/user-attachments/assets/c9d94a64-e3ff-4f30-98c4-4cfd0b3fbb53" width="24%" />
+  <img src="https://github.com/user-attachments/assets/83c8284a-9c3a-4d3f-97ab-022ac4b8485b" width="24%" />
 </p>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/0c0005d7-3681-442e-8298-28be31dbcdd4" height="160px" />
+  <img src="https://github.com/user-attachments/assets/0c0005d7-3681-442e-8298-28be31dbcdd4" width="24%" />
 </p>
 
 ---
