@@ -4,21 +4,46 @@ C_ACCENT="#c4a0f0"
 C_MUTED="#8c92a3"
 C_TEXT="#dcd6d6"
 
-BAT=$(upower -e | grep -i bat | head -1)
-[ -z "$BAT" ] && echo "" && exit 0
+BAT_PATH=""
+if command -v upower &>/dev/null; then
+  BAT_PATH=$(upower -e 2>/dev/null | grep -i bat | head -1)
+elif [ -d /sys/class/power_supply ]; then
+  for dir in /sys/class/power_supply/*/; do
+    [ -f "${dir}type" ] && [ "$(cat "${dir}type" 2>/dev/null)" = "Battery" ] && BAT_PATH="$dir" && break
+  done
+fi
 
-DATA=$(upower -i "$BAT" 2>/dev/null)
-CAP=$(echo "$DATA" | grep -i percentage | grep -oP '\d+(?=%)')
-STAT=$(echo "$DATA" | grep -i state | awk '{print $2}')
-MODEL=$(echo "$DATA" | grep -i model | awk -F: '{print $2}' | xargs)
-T2E=$(echo "$DATA" | grep -i 'time to empty' | grep -oP '[\d.]+ (hours|minutes|hour|minute)' | head -1)
-T2F=$(echo "$DATA" | grep -i 'time to full' | grep -oP '[\d.]+ (hours|minutes|hour|minute)' | head -1)
-WATTS=$(echo "$DATA" | grep -i 'energy-rate' | awk '{print $2}' | head -1)
-VOLTS=$(echo "$DATA" | grep -i 'voltage' | awk '{print $2}' | head -1)
-ENERGY=$(echo "$DATA" | grep -i 'energy:' | awk '{print $2}' | head -1)
-E_FULL=$(echo "$DATA" | grep -i 'energy-full:' | awk '{print $2}' | head -1)
-E_DESIGN=$(echo "$DATA" | grep -i 'energy-full-design' | awk '{print $2}' | head -1)
-TEMP=$(echo "$DATA" | grep -i 'temperature' | awk '{print $2}' | head -1)
+[ -z "$BAT_PATH" ] && echo "" && exit 0
+
+if command -v upower &>/dev/null; then
+  DATA=$(upower -i "$BAT_PATH" 2>/dev/null)
+  CAP=$(echo "$DATA" | grep -i percentage | grep -oP '\d+(?=%)')
+  STAT=$(echo "$DATA" | grep -i state | awk '{print $2}')
+  MODEL=$(echo "$DATA" | grep -i model | awk -F: '{print $2}' | xargs)
+  T2E=$(echo "$DATA" | grep -i 'time to empty' | grep -oP '[\d.]+ (hours|minutes|hour|minute)' | head -1)
+  T2F=$(echo "$DATA" | grep -i 'time to full' | grep -oP '[\d.]+ (hours|minutes|hour|minute)' | head -1)
+  WATTS=$(echo "$DATA" | grep -i 'energy-rate' | awk '{print $2}' | head -1)
+  VOLTS=$(echo "$DATA" | grep -i 'voltage' | awk '{print $2}' | head -1)
+  ENERGY=$(echo "$DATA" | grep -i 'energy:' | awk '{print $2}' | head -1)
+  E_FULL=$(echo "$DATA" | grep -i 'energy-full:' | awk '{print $2}' | head -1)
+  E_DESIGN=$(echo "$DATA" | grep -i 'energy-full-design' | awk '{print $2}' | head -1)
+elif [ -n "$BAT_PATH" ]; then
+  CAP=$(cat "${BAT_PATH}capacity" 2>/dev/null)
+  STAT=$(cat "${BAT_PATH}status" 2>/dev/null)
+  MODEL=$(cat "${BAT_PATH}manufacturer" 2>/dev/null || cat "${BAT_PATH}model_name" 2>/dev/null)
+  ENERGY=$(cat "${BAT_PATH}energy_now" 2>/dev/null)
+  E_FULL=$(cat "${BAT_PATH}energy_full" 2>/dev/null)
+  E_DESIGN=$(cat "${BAT_PATH}energy_full_design" 2>/dev/null)
+  POWER=$(cat "${BAT_PATH}power_now" 2>/dev/null)
+  VOLTS=$(cat "${BAT_PATH}voltage_now" 2>/dev/null)
+  [ -n "$POWER" ] && WATTS=$(echo "scale=2; $POWER / 1000000" | bc -l 2>/dev/null)
+  [ -n "$VOLTS" ] && VOLTS=$(echo "scale=2; $VOLTS / 1000000" | bc -l 2>/dev/null)
+  [ -n "$CAP" ] && CAP=$((CAP))
+  case "$STAT" in
+    Charging) T2F="..." ;;
+    Discharging) T2E="..." ;;
+  esac
+fi
 
 [ -z "$CAP" ] && CAP=0
 [ -n "$E_FULL" ] && [ -n "$E_DESIGN" ] && [ "$E_DESIGN" != "0" ] && HEALTH=$(echo "scale=1; $E_FULL / $E_DESIGN * 100" | bc -l 2>/dev/null | sed 's/\.0$//') || HEALTH=""

@@ -44,10 +44,12 @@ else
   [ -n "$LOCATION" ] && echo "$LOCATION" > "$CACHE"
 fi
 
-LOC_CITY=$(echo "$LOCATION" | python3 -c "import json,sys; d=json.load(sys.stdin); print(d.get('city',''))" 2>/dev/null)
-LOC_REGION=$(echo "$LOCATION" | python3 -c "import json,sys; d=json.load(sys.stdin); print(d.get('region',''))" 2>/dev/null)
-LOC_COUNTRY=$(echo "$LOCATION" | python3 -c "import json,sys; d=json.load(sys.stdin); print(d.get('country',''))" 2>/dev/null)
-LOC_ORG=$(echo "$LOCATION" | python3 -c "import json,sys; d=json.load(sys.stdin); print(d.get('org',''))" 2>/dev/null)
+if command -v jq &>/dev/null; then
+  LOC_CITY=$(echo "$LOCATION" | jq -r '.city // ""' 2>/dev/null)
+  LOC_REGION=$(echo "$LOCATION" | jq -r '.region // ""' 2>/dev/null)
+  LOC_COUNTRY=$(echo "$LOCATION" | jq -r '.country // ""' 2>/dev/null)
+  LOC_ORG=$(echo "$LOCATION" | jq -r '.org // ""' 2>/dev/null)
+fi
 
 # --- Generic VPN detection ---
 VPN_IFACE=""
