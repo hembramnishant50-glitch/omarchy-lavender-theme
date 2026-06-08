@@ -82,6 +82,8 @@ gsettings set org.gnome.desktop.interface cursor-theme 'Catppuccin-Mocha-Mauve-C
 ### 🔧 Install
 
 ```bash
+
+sudo pacman -S curl upower iw networkmanager bluez-utils zenity
 # Back up existing config
 [ -d ~/.config/waybar ] && mv ~/.config/waybar ~/.config/waybar-backup-$(date +%d-%m-%Y)
 
