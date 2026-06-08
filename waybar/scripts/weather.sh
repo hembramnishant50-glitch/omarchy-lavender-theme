@@ -46,13 +46,21 @@ elif [ "$1" == "--menu" ]; then
     case "$CHOICE" in
         *"Change Location"*)
             if command -v walker >/dev/null 2>&1; then
-                NEW_LOC=$(echo "Type custom city name..." | walker --dmenu)
-                [ "$NEW_LOC" == "Type custom city name..." ] && NEW_LOC=""
+                SEARCH_TERM=$(echo | walker --dmenu --inputonly --placeholder "Type a city name...")
             else
-                NEW_LOC=$(zenity --entry --title="Weather Location" --text="Type any city name:")
+                SEARCH_TERM=$(zenity --entry --title="Weather Location" --text="Type any city name:")
             fi
-            
-            if [ -n "$NEW_LOC" ]; then
+
+            if [ -n "$SEARCH_TERM" ]; then
+                if command -v walker >/dev/null 2>&1; then
+                    SUGGESTIONS=$(curl --max-time 5 -s -A "waybar-weather/1.0" "https://nominatim.openstreetmap.org/search?q=$(echo "$SEARCH_TERM" | sed 's/ /%20/g;s/&/%26/g')&format=json&limit=15&addressdetails=1")
+                    CITIES=$(echo "$SUGGESTIONS" | jq -r '.[] | [(.address.city // .address.town // .address.village // .address.municipality // .address.county // ""), (.address.state // ""), .address.country] | map(select(. != "")) | join(", ")' 2>/dev/null)
+                    if [ -n "$CITIES" ]; then
+                        SELECTED=$(echo "$CITIES" | walker --dmenu)
+                        [ -n "$SELECTED" ] && NEW_LOC=$(echo "$SELECTED" | awk -F', ' '{print $1}')
+                    fi
+                fi
+                [ -z "$NEW_LOC" ] && NEW_LOC="$SEARCH_TERM"
                 echo "$NEW_LOC" > "$FILE_OVERRIDE"
                 notify-send -a "Weather" -i "mark-location" "Location Updated" "Now tracking weather for: $NEW_LOC"
                 rm -f "$CACHE_FILE_WTTR" "$CACHE_FILE_AQI" 
