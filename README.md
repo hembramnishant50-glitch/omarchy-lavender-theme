@@ -24,10 +24,7 @@
 
 <p align="center">
   <b>💜</b> Lavender-tinted Catppuccin Mocha palette &nbsp;&nbsp;
-  <b>🧩</b> 11 custom Waybar scripts &nbsp;&nbsp;
   <b>🖥️</b> Rounded Hyprland with blur & shadows &nbsp;&nbsp;
-  <b>🎨</b> 17 wallpapers included &nbsp;&nbsp;
-  <b>📦</b> 20+ themed applications
 </p>
 
 ---
