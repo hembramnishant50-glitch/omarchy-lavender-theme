@@ -51,37 +51,37 @@ rm ~/.config/gtk-3.0/gtk.css ~/.config/gtk-4.0/gtk.css && nautilus -q
 
 <table>
 <tr>
-<td align="center"><img src="backgrounds/desolate-city-2.jpg" width="320" height="180" style="object-fit:cover; border-radius:10px;"/><br><sub><code>desolate-city-2.jpg</code></sub></td>
-<td align="center"><img src="backgrounds/desolate-city.jpg" width="320" height="180" style="object-fit:cover; border-radius:10px;"/><br><sub><code>desolate-city.jpg</code></sub></td>
-<td align="center"><img src="backgrounds/dominik-mayer-24.jpg" width="320" height="180" style="object-fit:cover; border-radius:10px;"/><br><sub><code>dominik-mayer-24.jpg</code></sub></td>
+<td align="center"><img src="backgrounds/desolate-city-2.jpg" width="320" height="180" style="object-fit:cover; border-radius:10px;"/></td>
+<td align="center"><img src="backgrounds/desolate-city.jpg" width="320" height="180" style="object-fit:cover; border-radius:10px;"/></td>
+<td align="center"><img src="backgrounds/dominik-mayer-24.jpg" width="320" height="180" style="object-fit:cover; border-radius:10px;"/></td>
 </tr>
 <tr>
-<td align="center"><img src="backgrounds/flowering-rain.png" width="320" height="180" style="object-fit:cover; border-radius:10px;"/><br><sub><code>flowering-rain.png</code></sub></td>
-<td align="center"><img src="backgrounds/koishi.jpg" width="320" height="180" style="object-fit:cover; border-radius:10px;"/><br><sub><code>koishi.jpg</code></sub></td>
-<td align="center"><img src="backgrounds/pompeii.png" width="320" height="180" style="object-fit:cover; border-radius:10px;"/><br><sub><code>pompeii.png</code></sub></td>
+<td align="center"><img src="backgrounds/flowering-rain.png" width="320" height="180" style="object-fit:cover; border-radius:10px;"/></td>
+<td align="center"><img src="backgrounds/koishi.jpg" width="320" height="180" style="object-fit:cover; border-radius:10px;"/></td>
+<td align="center"><img src="backgrounds/pompeii.png" width="320" height="180" style="object-fit:cover; border-radius:10px;"/></td>
 </tr>
 <tr>
-<td align="center"><img src="backgrounds/railroad-2.jpg" width="320" height="180" style="object-fit:cover; border-radius:10px;"/><br><sub><code>railroad-2.jpg</code></sub></td>
-<td align="center"><img src="backgrounds/soaring-off.jpg" width="320" height="180" style="object-fit:cover; border-radius:10px;"/><br><sub><code>soaring-off.jpg</code></sub></td>
-<td align="center"><img src="backgrounds/vibrant-gate.png" width="320" height="180" style="object-fit:cover; border-radius:10px;"/><br><sub><code>vibrant-gate.png</code></sub></td>
+<td align="center"><img src="backgrounds/railroad-2.jpg" width="320" height="180" style="object-fit:cover; border-radius:10px;"/></td>
+<td align="center"><img src="backgrounds/soaring-off.jpg" width="320" height="180" style="object-fit:cover; border-radius:10px;"/></td>
+<td align="center"><img src="backgrounds/vibrant-gate.png" width="320" height="180" style="object-fit:cover; border-radius:10px;"/></td>
 </tr>
 <tr>
-<td align="center"><img src="backgrounds/voyager-11.jpg" width="320" height="180" style="object-fit:cover; border-radius:10px;"/><br><sub><code>voyager-11.jpg</code></sub></td>
-<td align="center"><img src="backgrounds/voyager-15.jpg" width="320" height="180" style="object-fit:cover; border-radius:10px;"/><br><sub><code>voyager-15.jpg</code></sub></td>
-<td align="center"><img src="backgrounds/voyager-16.jpg" width="320" height="180" style="object-fit:cover; border-radius:10px;"/><br><sub><code>voyager-16.jpg</code></sub></td>
+<td align="center"><img src="backgrounds/voyager-11.jpg" width="320" height="180" style="object-fit:cover; border-radius:10px;"/></td>
+<td align="center"><img src="backgrounds/voyager-15.jpg" width="320" height="180" style="object-fit:cover; border-radius:10px;"/></td>
+<td align="center"><img src="backgrounds/voyager-16.jpg" width="320" height="180" style="object-fit:cover; border-radius:10px;"/></td>
 </tr>
 <tr>
-<td align="center"><img src="backgrounds/wallz-14.jpg" width="320" height="180" style="object-fit:cover; border-radius:10px;"/><br><sub><code>wallz-14.jpg</code></sub></td>
-<td align="center"><img src="backgrounds/wallz-17.jpg" width="320" height="180" style="object-fit:cover; border-radius:10px;"/><br><sub><code>wallz-17.jpg</code></sub></td>
-<td align="center"><img src="backgrounds/wallz-23.png" width="320" height="180" style="object-fit:cover; border-radius:10px;"/><br><sub><code>wallz-23.png</code></sub></td>
+<td align="center"><img src="backgrounds/wallz-14.jpg" width="320" height="180" style="object-fit:cover; border-radius:10px;"/></td>
+<td align="center"><img src="backgrounds/wallz-17.jpg" width="320" height="180" style="object-fit:cover; border-radius:10px;"/></td>
+<td align="center"><img src="backgrounds/wallz-23.png" width="320" height="180" style="object-fit:cover; border-radius:10px;"/></td>
 </tr>
 <tr>
-<td align="center"><img src="backgrounds/wallz-25.jpg" width="320" height="180" style="object-fit:cover; border-radius:10px;"/><br><sub><code>wallz-25.jpg</code></sub></td>
-<td align="center"><img src="backgrounds/wallz-31.png" width="320" height="180" style="object-fit:cover; border-radius:10px;"/><br><sub><code>wallz-31.png</code></sub></td>
-<td align="center"><img src="backgrounds/wallz-34.png" width="320" height="180" style="object-fit:cover; border-radius:10px;"/><br><sub><code>wallz-34.png</code></sub></td>
+<td align="center"><img src="backgrounds/wallz-25.jpg" width="320" height="180" style="object-fit:cover; border-radius:10px;"/></td>
+<td align="center"><img src="backgrounds/wallz-31.png" width="320" height="180" style="object-fit:cover; border-radius:10px;"/></td>
+<td align="center"><img src="backgrounds/wallz-34.png" width="320" height="180" style="object-fit:cover; border-radius:10px;"/></td>
 </tr>
 <tr>
-<td align="center"><img src="backgrounds/wallz-35.jpg" width="320" height="180" style="object-fit:cover; border-radius:10px;"/><br><sub><code>wallz-35.jpg</code></sub></td>
+<td align="center"><img src="backgrounds/wallz-35.jpg" width="320" height="180" style="object-fit:cover; border-radius:10px;"/></td>
 <td></td>
 <td></td>
 </tr>
