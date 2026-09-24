@@ -129,10 +129,17 @@ gsettings set org.gnome.desktop.interface cursor-theme 'Catppuccin-Mocha-Mauve-C
 </tr>
 </table>
 
-Cycle with `omarchy theme bg next` or `omarchy theme bg set backgrounds/<name>`.
-
 ---
 
-## 📜 License
+## 🤝 Contributing
 
-MIT — original lavender + Omarchy 4 port.
+PRs welcome — for major changes, please open an issue first.
+
+```bash
+git checkout -b feat/my-change
+git commit -m 'feat: add my change'
+git push origin feat/my-change
+# then open a PR
+```
+
+Made with ☕ for Omarchy Quattro
