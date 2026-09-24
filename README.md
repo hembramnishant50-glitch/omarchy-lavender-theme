@@ -64,13 +64,20 @@ fastfetch
 ## 🎨 Icons & Cursor
 
 ```bash
-# Papirus violet + Catppuccin Mauve cursors — one click
+# install — Papirus violet + Catppuccin Mauve cursors — one click
 ~/.config/omarchy/themes/lavender/install-icons.sh
 # manual:
 yay -S papirus-icon-theme papirus-folders-git catppuccin-cursors-mocha
 papirus-folders -C violet --theme Papirus-Dark
 gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
 gsettings set org.gnome.desktop.interface cursor-theme 'Catppuccin-Mocha-Mauve-Cursors'
+```
+
+**Remove:**
+
+```bash
+~/.config/omarchy/themes/lavender/remove-icons.sh        # reset to Adwaita
+~/.config/omarchy/themes/lavender/remove-icons.sh --uninstall  # + pacman -R
 ```
 
 ---
