@@ -49,15 +49,43 @@ rm ~/.config/gtk-3.0/gtk.css ~/.config/gtk-4.0/gtk.css && nautilus -q
 
 ## 🖼️ Wallpapers — 19 Lavender Showcase
 
-| | | |
-|---|---|---|
-| ![desolate-city-2](backgrounds/desolate-city-2.jpg) `desolate-city-2.jpg` | ![desolate-city](backgrounds/desolate-city.jpg) `desolate-city.jpg` | ![dominik-mayer-24](backgrounds/dominik-mayer-24.jpg) `dominik-mayer-24.jpg` |
-| ![flowering-rain](backgrounds/flowering-rain.png) `flowering-rain.png` | ![koishi](backgrounds/koishi.jpg) `koishi.jpg` | ![pompeii](backgrounds/pompeii.png) `pompeii.png` |
-| ![railroad-2](backgrounds/railroad-2.jpg) `railroad-2.jpg` | ![soaring-off](backgrounds/soaring-off.jpg) `soaring-off.jpg` | ![vibrant-gate](backgrounds/vibrant-gate.png) `vibrant-gate.png` |
-| ![voyager-11](backgrounds/voyager-11.jpg) `voyager-11.jpg` | ![voyager-15](backgrounds/voyager-15.jpg) `voyager-15.jpg` | ![voyager-16](backgrounds/voyager-16.jpg) `voyager-16.jpg` |
-| ![wallz-14](backgrounds/wallz-14.jpg) `wallz-14.jpg` | ![wallz-17](backgrounds/wallz-17.jpg) `wallz-17.jpg` | ![wallz-23](backgrounds/wallz-23.png) `wallz-23.png` |
-| ![wallz-25](backgrounds/wallz-25.jpg) `wallz-25.jpg` | ![wallz-31](backgrounds/wallz-31.png) `wallz-31.png` | ![wallz-34](backgrounds/wallz-34.png) `wallz-34.png` |
-| ![wallz-35](backgrounds/wallz-35.jpg) `wallz-35.jpg` | | |
+<table>
+<tr>
+<td align="center"><img src="backgrounds/desolate-city-2.jpg" width="320" height="180" style="object-fit:cover; border-radius:10px;"/><br><sub><code>desolate-city-2.jpg</code></sub></td>
+<td align="center"><img src="backgrounds/desolate-city.jpg" width="320" height="180" style="object-fit:cover; border-radius:10px;"/><br><sub><code>desolate-city.jpg</code></sub></td>
+<td align="center"><img src="backgrounds/dominik-mayer-24.jpg" width="320" height="180" style="object-fit:cover; border-radius:10px;"/><br><sub><code>dominik-mayer-24.jpg</code></sub></td>
+</tr>
+<tr>
+<td align="center"><img src="backgrounds/flowering-rain.png" width="320" height="180" style="object-fit:cover; border-radius:10px;"/><br><sub><code>flowering-rain.png</code></sub></td>
+<td align="center"><img src="backgrounds/koishi.jpg" width="320" height="180" style="object-fit:cover; border-radius:10px;"/><br><sub><code>koishi.jpg</code></sub></td>
+<td align="center"><img src="backgrounds/pompeii.png" width="320" height="180" style="object-fit:cover; border-radius:10px;"/><br><sub><code>pompeii.png</code></sub></td>
+</tr>
+<tr>
+<td align="center"><img src="backgrounds/railroad-2.jpg" width="320" height="180" style="object-fit:cover; border-radius:10px;"/><br><sub><code>railroad-2.jpg</code></sub></td>
+<td align="center"><img src="backgrounds/soaring-off.jpg" width="320" height="180" style="object-fit:cover; border-radius:10px;"/><br><sub><code>soaring-off.jpg</code></sub></td>
+<td align="center"><img src="backgrounds/vibrant-gate.png" width="320" height="180" style="object-fit:cover; border-radius:10px;"/><br><sub><code>vibrant-gate.png</code></sub></td>
+</tr>
+<tr>
+<td align="center"><img src="backgrounds/voyager-11.jpg" width="320" height="180" style="object-fit:cover; border-radius:10px;"/><br><sub><code>voyager-11.jpg</code></sub></td>
+<td align="center"><img src="backgrounds/voyager-15.jpg" width="320" height="180" style="object-fit:cover; border-radius:10px;"/><br><sub><code>voyager-15.jpg</code></sub></td>
+<td align="center"><img src="backgrounds/voyager-16.jpg" width="320" height="180" style="object-fit:cover; border-radius:10px;"/><br><sub><code>voyager-16.jpg</code></sub></td>
+</tr>
+<tr>
+<td align="center"><img src="backgrounds/wallz-14.jpg" width="320" height="180" style="object-fit:cover; border-radius:10px;"/><br><sub><code>wallz-14.jpg</code></sub></td>
+<td align="center"><img src="backgrounds/wallz-17.jpg" width="320" height="180" style="object-fit:cover; border-radius:10px;"/><br><sub><code>wallz-17.jpg</code></sub></td>
+<td align="center"><img src="backgrounds/wallz-23.png" width="320" height="180" style="object-fit:cover; border-radius:10px;"/><br><sub><code>wallz-23.png</code></sub></td>
+</tr>
+<tr>
+<td align="center"><img src="backgrounds/wallz-25.jpg" width="320" height="180" style="object-fit:cover; border-radius:10px;"/><br><sub><code>wallz-25.jpg</code></sub></td>
+<td align="center"><img src="backgrounds/wallz-31.png" width="320" height="180" style="object-fit:cover; border-radius:10px;"/><br><sub><code>wallz-31.png</code></sub></td>
+<td align="center"><img src="backgrounds/wallz-34.png" width="320" height="180" style="object-fit:cover; border-radius:10px;"/><br><sub><code>wallz-34.png</code></sub></td>
+</tr>
+<tr>
+<td align="center"><img src="backgrounds/wallz-35.jpg" width="320" height="180" style="object-fit:cover; border-radius:10px;"/><br><sub><code>wallz-35.jpg</code></sub></td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
 Cycle with `omarchy theme bg next` or `omarchy theme bg set backgrounds/<name>`.
 
