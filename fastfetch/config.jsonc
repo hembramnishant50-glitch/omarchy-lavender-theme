@@ -1,0 +1,139 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "kitty",
+    "source": "~/.config/fastfetch/hollow-knight.png",
+    "width": 32,
+    "padding": {
+      "top": 2,
+      "right": 4,
+      "left": 2
+    }
+  },
+  "display": {
+    "separator": " 󰁔 ",
+    "color": {
+      "keys": "#cba6f7"
+    }
+  },
+  "modules": [
+    {
+      "type": "title",
+      "format": "{user-name-colored} {at-symbol-colored} {host-name-colored}"
+    },
+    {
+      "type": "custom",
+      "format": "──────────────────────────────",
+      "color": "#585b70"
+    },
+    {
+      "type": "command",
+      "key": "  OS ",
+      "keyColor": "#cba6f7",
+      "text": "version=$(omarchy-version 2>/dev/null); echo \"Omarchy ${version:-unknown}\"",
+      "color": "#cdd6f4"
+    },
+    {
+      "type": "kernel",
+      "key": "  KRN",
+      "keyColor": "#cba6f7",
+      "color": "#cdd6f4"
+    },
+    {
+      "type": "uptime",
+      "key": "󰅐  UPT",
+      "keyColor": "#cba6f7",
+      "color": "#cdd6f4"
+    },
+    {
+      "type": "packages",
+      "key": "󰏖  PKG",
+      "keyColor": "#cba6f7",
+      "color": "#cdd6f4"
+    },
+    {
+      "type": "command",
+      "key": "󰚰  UPD",
+      "keyColor": "#cba6f7",
+      "text": "t=$(stat -c %Y /var/lib/pacman/sync/core.db 2>/dev/null); if [ -n \"$t\" ]; then age=$(( ($(date +%s) - $t) / 86400 )); if [ $age -eq 0 ]; then echo 'Today'; elif [ $age -eq 1 ]; then echo '1 day ago'; else echo \"${age} days ago\"; fi; else echo 'N/A'; fi",
+      "color": "#cdd6f4"
+    },
+    {
+      "type": "custom",
+      "format": "──────────────────────────────",
+      "color": "#585b70"
+    },
+    {
+      "type": "cpu",
+      "key": "  CPU",
+      "keyColor": "#89b4fa",
+      "showPeCoreCount": true,
+      "color": "#cdd6f4"
+    },
+    {
+      "type": "gpu",
+      "key": "󰢮  GPU",
+      "keyColor": "#89b4fa",
+      "detectionMethod": "pci",
+      "color": "#cdd6f4"
+    },
+    {
+      "type": "memory",
+      "key": "  RAM",
+      "keyColor": "#89b4fa",
+      "color": "#cdd6f4"
+    },
+    {
+      "type": "swap",
+      "key": "󰓡  SWP",
+      "keyColor": "#89b4fa",
+      "color": "#cdd6f4"
+    },
+    {
+      "type": "disk",
+      "key": "󰋊  DSK",
+      "keyColor": "#89b4fa",
+      "color": "#cdd6f4"
+    },
+    {
+      "type": "custom",
+      "format": "──────────────────────────────",
+      "color": "#585b70"
+    },
+    {
+      "type": "wm",
+      "key": "  WM ",
+      "keyColor": "#f5c2e7",
+      "color": "#cdd6f4"
+    },
+    {
+      "type": "terminal",
+      "key": "  TRM",
+      "keyColor": "#f5c2e7",
+      "color": "#cdd6f4"
+    },
+    {
+      "type": "shell",
+      "key": "󰆍  SHL",
+      "keyColor": "#f5c2e7",
+      "color": "#cdd6f4"
+    },
+    {
+      "type": "command",
+      "key": "  THM",
+      "keyColor": "#f5c2e7",
+      "text": "theme=$(omarchy-theme-current 2>/dev/null || echo 'unknown'); echo -e \"$theme \\e[38;2;243;139;168m●\\e[38;2;250;179;135m●\\e[38;2;249;226;175m●\\e[38;2;166;227;161m●\\e[38;2;137;180;250m●\\e[38;2;203;166;247m●\"",
+      "color": "#cdd6f4"
+    },
+    {
+      "type": "custom",
+      "format": "──────────────────────────────",
+      "color": "#585b70"
+    },
+    {
+      "type": "colors",
+      "symbol": "circle",
+      "blockWidth": 3
+    }
+  ]
+}

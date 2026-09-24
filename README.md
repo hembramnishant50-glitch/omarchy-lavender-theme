@@ -45,6 +45,22 @@ omarchy theme install https://github.com/hembramnishant50-glitch/omarchy-lavende
 rm ~/.config/gtk-3.0/gtk.css ~/.config/gtk-4.0/gtk.css && nautilus -q
 ```
 
+## 🚀 Fastfetch
+
+```bash
+# install + apply lavender fastfetch to ~/.config/fastfetch/
+~/.config/omarchy/themes/lavender/install-fastfetch.sh
+# or: sudo pacman -S --needed --noconfirm fastfetch && mkdir -p ~/.config/fastfetch && cp ~/.config/omarchy/themes/lavender/fastfetch/* ~/.config/fastfetch/
+fastfetch
+```
+
+**Remove:**
+
+```bash
+~/.config/omarchy/themes/lavender/remove-fastfetch.sh       # config only
+~/.config/omarchy/themes/lavender/remove-fastfetch.sh --uninstall  # + pacman -R
+```
+
 ---
 
 ## 🖼️ Wallpapers — 19 Lavender Showcase
