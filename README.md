@@ -1,195 +1,175 @@
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/b516c9cc-e4cc-4c9f-adae-954adcf95e99" width="80%" />
+  <img src="preview.png" width="80%" />
 </p>
 
-<h1 align="center">✨ Omarchy Lavender ✨</h1>
+<h1 align="center">✨ Omarchy Lavender — Omarchy 4 ✨</h1>
 
 <p align="center">
-  <b>A lavender-tinted rice for <a href="https://omarchy.org/">Omarchy</a></b>
-  <br>
-  <code>omarchy-theme-set lavender</code>
+  <b>A lavender-tinted Catppuccin Mocha rice for <a href="https://omarchy.org/">Omarchy 4</a></b><br>
+  <code>omarchy theme set lavender</code> · <code>omarchy theme bg next</code>
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/accent-%23cba6f7-8b5cf6?style=for-the-badge&labelColor=11111b" />
   <img src="https://img.shields.io/badge/bg-%2311111b-1e1e2e?style=for-the-badge&labelColor=11111b" />
   <img src="https://img.shields.io/badge/fg-%23cdd6f4-cdd6f4?style=for-the-badge&labelColor=11111b" />
+  <img src="https://img.shields.io/badge/Omarchy-4-cba6f7?style=for-the-badge&labelColor=11111b" />
   <img src="https://img.shields.io/badge/catppuccin-mocha-8b5cf6?style=for-the-badge&labelColor=11111b" />
-  <img src="https://img.shields.io/badge/font-SF_Pro_%2B_JetBrains_Mono-cdd6f4?style=for-the-badge&labelColor=11111b" />
+  <img src="https://img.shields.io/badge/Hyprland-lua-89b4fa?style=for-the-badge&labelColor=11111b" />
 </p>
 
 ---
 
-## ✨ Features
-
-<p align="center">
-  <b>💜</b> Lavender-tinted Catppuccin Mocha palette &nbsp;&nbsp;
-  <b>🖥️</b> Rounded Hyprland with blur & shadows &nbsp;&nbsp;
-</p>
-
----
-
-## 📷 Preview
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/315b732b-52f9-44c7-a708-1a8bcc51b0ac" width="48%" />
-  <img src="https://github.com/user-attachments/assets/52c32d78-c749-4e70-b94e-3da11da2c178" width="48%" />
-</p>
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/ec2fc375-cce0-4486-965d-d0ba0f3ff7a1" width="48%" />
-  <img src="https://github.com/user-attachments/assets/ab5f296c-0670-4136-a352-d091274938b5" width="48%" />
-</p>
+> **Ported from [`omarchy-lavender-theme` (Omarchy 3 / Waybar era)](https://github.com/hembramnishant50-glitch/omarchy-lavender-theme) to Omarchy 4's unified theme engine.**  
+> Omarchy 3 used Waybar/Walker/Mako/SwayOSD; Omarchy 4 uses Omarchy Shell. This port keeps the exact `#cba6f7` lavender on `#11111b` and expands `colors.toml` so `omarchy theme set` auto-generates terminals, browsers, and shell while preserving hand-tuned `hyprland.lua`/`neovim.lua`/`gtk.css`.
 
 ---
 
 ## ⚡ Quick Install
 
 ```bash
-omarchy-theme-install https://github.com/hembramnishant50-glitch/omarchy-lavender-theme.git
+omarchy theme install https://github.com/hembramnishant50-glitch/omarchy-lavender-theme.git
+rm -rf ~/.config/omarchy/themes/lavender/.git && omarchy theme set lavender
+# file manager solid + yazi flavor
+~/.config/omarchy/themes/lavender/apply-filemanager.sh
 ```
 
----
-
-## 🎨 Prerequisites — Icons & Cursors
-
-<details open>
-<summary><b>Icons & Cursors</b></summary>
+**One-liner (install + enable Lua):**
 
 ```bash
-# Papirus Dark — Violet folders
-yay -S papirus-icon-theme papirus-folders-git
-papirus-folders -C violet --theme Papirus-Dark
-gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
-
-# Catppuccin Mocha Mauve cursors
-yay -S catppuccin-cursors-mocha
-gsettings set org.gnome.desktop.interface cursor-theme 'Catppuccin-Mocha-Mauve-Cursors'
+omarchy theme install https://github.com/hembramnishant50-glitch/omarchy-lavender-theme.git && rm -rf ~/.config/omarchy/themes/lavender/.git && omarchy theme set lavender
 ```
 
-</details>
-
----
-
-## 🧩 Waybar
-
-<p align="center">
-  <img width="1920" height="42" alt="Waybar screenshot" src="https://github.com/user-attachments/assets/706a3449-6462-460e-a83d-76653ff8de4f" />
-</p>
-
-### 🔧 Install
-
-```bash
-
-sudo pacman -S curl upower iw networkmanager bluez-utils zenity
-# Back up existing config
-[ -d ~/.config/waybar ] && mv ~/.config/waybar ~/.config/waybar-backup-$(date +%d-%m-%Y)
-
-# Copy theme's waybar
-mkdir -p ~/.config/waybar
-cp -r ~/.config/omarchy/current/theme/waybar/* ~/.config/waybar/
-chmod +x ~/.config/waybar/scripts/*
-
-# Restart
-killall -q waybar && nohup waybar > /dev/null 2>&1 &
-```
-
-### 🌤️ Weather Location
-
-| Step | Action |
-|------|--------|
-| 1 | Click the **weather icon** in Waybar |
-| 2 | **Walker** opens — select **Change location** |
-| 3 | Type your city and select it |
-| 4 | Done — weather updates automatically |
-
-<br>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/-More_Waybar_Configs_Coming_Soon-cba6f7?style=for-the-badge&labelColor=11111b&color=8b5cf6" />
-  <br>
-  <sub>🧩 <b>Layout tables</b> · 📜 <b>Custom scripts</b> · 🖱️ <b>Click actions</b> — detailed docs on the way</sub>
-</p>
+> Lua files (`hyprland.lua`, `neovim.lua`, `gum_env.lua`) are blocked for git-installed themes — the `rm -rf .git` makes the theme yours so Hyprland/Neovim/Gum use lavender.
 
 ---
 
 ## 🎨 Color Palette
 
-| Color | Hex | Preview | Usage |
-|-------|-----|---------|-------|
-| Base | `#11111b` | <img src="https://placehold.co/12x12/11111b/11111b" /> | Background |
-| Text | `#cdd6f4` | <img src="https://placehold.co/12x12/cdd6f4/cdd6f4" /> | Foreground |
-| Lavender | `#cba6f7` | <img src="https://placehold.co/12x12/cba6f7/cba6f7" /> | Accent, borders, active |
-| Surface 0 | `#1e1e2e` | <img src="https://placehold.co/12x12/1e1e2e/1e1e2e" /> | Elevated surfaces |
-| Surface 1 | `#313244` | <img src="https://placehold.co/12x12/313244/313244" /> | Selection, dividers |
-| Surface 2 | `#585b70` | <img src="https://placehold.co/12x12/585b70/585b70" /> | Subtle overlays |
-| Red | `#f38ba8` | <img src="https://placehold.co/12x12/f38ba8/f38ba8" /> | Errors |
-| Green | `#a6e3a1` | <img src="https://placehold.co/12x12/a6e3a1/a6e3a1" /> | Success |
-| Yellow | `#f9e2af` | <img src="https://placehold.co/12x12/f9e2af/f9e2af" /> | Warnings |
-| Blue | `#89b4fa` | <img src="https://placehold.co/12x12/89b4fa/89b4fa" /> | Info / links |
-| Teal | `#94e2d5` | <img src="https://placehold.co/12x12/94e2d5/94e2d5" /> | Cyan highlights |
-| Peach | `#fab387` | <img src="https://placehold.co/12x12/fab387/fab387" /> | Orange tones |
+| Token | Hex | Usage |
+|-------|-----|-------|
+| `background` | `#11111b` | Base, Alacritty/Kitty/Ghostty bg |
+| `foreground` | `#cdd6f4` | Text |
+| `accent` | `#cba6f7` | Borders, active, cursor |
+| `lighter_background` | `#1e1e2e` | Headerbar, cards |
+| `selection` | `#313244` | Visual selection |
+| `muted` | `#585b70` → helix/neovim uses `#a6adc8` for visibility | Dim UI (brightened for code) |
+| `red` | `#f38ba8` | Errors, close hover |
+| `green` | `#a6e3a1` | Success |
+| `yellow` | `#f9e2af` | Warnings |
+| `blue` | `#89b4fa` | Info, functions |
+| `cyan` | `#94e2d5` | Highlights |
+| `peach` | `#fab387` | `bright_yellow` |
+| `teal` | `#89dceb` | `bright_cyan` |
+| `subtext` | `#a6adc8`/`#bac2de` | Comments, linenr (no dim gray) |
+
+`colors.toml:1` is the single source of truth — every terminal, Helix, VS Code, and Shell derives from it.
 
 ---
 
-## 🖥️ Hyprland Details
+## 🖥️ What's Themed — 30 Files
 
-| Setting | Value |
-|---------|-------|
-| Active border | `#cba6f7` |
-| Inactive border | `#313244` |
-| Border width | `2px` |
-| Corner rounding | `12px` |
-| Gaps (inner/outer) | `4px` / `8px` |
-| Blur | size `6`, passes `3`, contrast `1.0`, brightness `1.1`, vibrancy `0.16`, noise `0.02` |
-| Shadow | range `20`, render power `3`, `rgba(00000066)` |
-| Animation curves | `fluent_decel`, `easeOutCirc`, `easeOutCubic`, `easeInOutSine`, `overshot` |
-| Window animations | `popin` / `slidefade` |
-| Layer blur | walker, waybar, notifications, vicinae, swayosd |
+| File | Role | Key Settings |
+|------|------|--------------|
+| `colors.toml` | **Master** — generates Alacritty/Foot/Kitty/Ghostty/Helix/btop/Chromium/VS Code via `default/themed/*.tpl` | `mode dark`, `hyprland_active #cba6f7 / inactive #313244` |
+| `shell.toml` | Omarchy Shell — bar, popups, launcher, lock, notifications | `bar bg #11111b / active #cba6f7`, `hyprland active-border #cba6f7` |
+| `hyprland.lua` | Hyprland `gaps 4/8`, `rounding 12`, `border 2`, `blur 10×3`, `shadow 12/2`, `overshot` animations | `active rgb(cba6f7)` |
+| `gum_env.lua` | `gum confirm/update` dialog — `Ready to update?` | `BORDER #cba6f7`, `SELECTED #11111b on #cba6f7` |
+| `gtk.css` | **Default look, only colours** — Nautilus file manager solid | `window #11111b`, `headerbar #1e1e2e + border #cba6f7`, no custom rounding |
+| `icons.theme` | `Papirus-Dark` (violet folders via `papirus-folders -C violet`) |  |
+| `alacritty.toml` | Glassy `opacity 0.96`, no shadow | `cursor #cba6f7`, `selection #cdd6f4/#313244` |
+| `ghostty.conf` | `opacity 0.96 / blur 10`, `padding 10` | `palette 0 #11111b … 15 #a6adc8` |
+| `kitty.conf` | `opacity 0.96 / blur 8`, `beam 1.8`, `blink 0.5`, `trail 0` (no font shadow) | `cursor #cba6f7` |
+| `foot.ini` | `alpha 0.96 / blur true`, `pad 10x10 center` | `[main]` + `[colors-dark]` |
+| `btop.theme` | Glassy → now **solid** `#11111b` (transparent via `main_bg ""` if you want glassy, `-solid`) — all boxes `#cba6f7` | `title #cba6f7` |
+| `helix.toml` | No gray: `comment #a6adc8`, `linenr #939ab7`, `palette color1 #f38ba8` (red distinct) |  |
+| `neovim.lua` | High-contrast for coders: `Comment #a6adc8`, `Function #89b4fa`, `String #a6e3a1`, `LineNr #939ab7` |  |
+| `obsidian.css` | Vault `bg #11111b / accent #cba6f7` |  |
+| `starship.toml` | Prompt `❯` `bold #cba6f7` |  |
+| `vscode-theme.json` | Full VS Code theme from `colors.toml` |  |
+| `chromium.theme` | `17,17,27` (`#11111b`) |  |
+| `keyboard.rgb` | `#cba6f7` wave |  |
+| `hyprland-preview-share-picker.css` | Share picker `accent #cba6f7` |  |
+| `claude.json` / `pi.json` / `t3code.json` | AI agents accent `#cba6f7` |  |
+| `firefox-userChrome.css` / `vencord.theme.css` | Browser/Discord `#11111b/#cba6f7` |  |
+| `zed.json` / `yazi-theme.toml` | Zed + Yazi file manager `hover #cdd6f4 on #313244` |  |
+| `tmux.conf` / `lazygit.yml` | Tmux/lazygit `#cba6f7` |  |
+| `Stylus.json` / `youtube-lavender.user.less` | 136 userstyles lavender |  |
+| `backgrounds/` | 17 wallpapers |  |
+| `apply-filemanager.sh` | One-click `omarchy theme set + nautilus -q + yazi flavor` |  |
 
-### 🖼️ Wallpaper Collection
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/1a7a3249-0deb-493d-beea-56a4399adf00" width="24%" />
-  <img src="https://github.com/user-attachments/assets/a18d4711-1dab-4c19-80a8-a25b2d9e4827" width="24%" />
-  <img src="https://github.com/user-attachments/assets/71c1e93c-777a-4d63-bfbc-999b493db789" width="24%" />
-  <img src="https://github.com/user-attachments/assets/58fe5cb3-bf9d-42e3-af71-6b853095fdd8" width="24%" />
-</p>
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/77e71d0a-b4c3-4ee3-92f0-7a5bd41385f2" width="24%" />
-  <img src="https://github.com/user-attachments/assets/0d02189a-1933-4b59-9ae8-947c2a51824a" width="24%" />
-  <img src="https://github.com/user-attachments/assets/5b101299-07b8-44ad-87ee-fc2849c1565d" width="24%" />
-  <img src="https://github.com/user-attachments/assets/215030f8-482e-4c9e-9f85-f0f55f2b592a" width="24%" />
-</p>
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/aed85e9f-44b5-40dd-b671-2df50e5779ca" width="24%" />
-  <img src="https://github.com/user-attachments/assets/04d68551-946e-4f1a-bfb0-cd6924b2d0ce" width="24%" />
-  <img src="https://github.com/user-attachments/assets/8428fe18-9519-4807-a69e-e76295096f08" width="24%" />
-  <img src="https://github.com/user-attachments/assets/8b69a641-f7a7-452c-959e-7e8040b1a2bd" width="24%" />
-</p>
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/002f1833-b336-4a58-839f-346af63231f5" width="24%" />
-  <img src="https://github.com/user-attachments/assets/5e87f572-1c1e-4355-b375-5a46280cfcc1" width="24%" />
-  <img src="https://github.com/user-attachments/assets/c9d94a64-e3ff-4f30-98c4-4cfd0b3fbb53" width="24%" />
-  <img src="https://github.com/user-attachments/assets/83c8284a-9c3a-4d3f-97ab-022ac4b8485b" width="24%" />
-</p>
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/0c0005d7-3681-442e-8298-28be31dbcdd4" width="24%" />
-</p>
+> **Deleted from Omarchy 3:** `waybar/`, `walker.css`, `wofi.css`, `mako.ini`, `swayosd.css` — replaced by Shell. Originals remain in `git log`.
 
 ---
 
-## 🤝 Contributing
+## 🧩 Hyprland
 
-Pull requests are welcome! For major changes, please open an issue first.
-
-1. 🍴 Fork the repo
-2. 🌿 Create your feature branch: `git checkout -b feat/my-change`
-3. 💾 Commit: `git commit -m 'feat: add my change'`
-4. 🚀 Push: `git push origin feat/my-change`
-5. 🔄 Open a Pull Request
+```
+active_border   #cba6f7  inactive #313244  border 2  rounding 12
+gaps 4 / 8  shadow 12/2 rgba(00000040)  blur 10×3 vibrancy 0.22
+curves fluent_decel / easeOutCirc / easeOutCubic / overshot → popin 60% / slide
+```
 
 ---
 
-<p align="center">
-  <sub>Made with 💜 for the Omarchy community</sub>
-</p>
+## 📂 File Manager — Solid (default, only colours)
+
+`gtk.css:1` is **default Nautilus look, only palette changed** — no glassy header.  
+Yazi terminal manager via `yazi-theme.toml:1` (`hover #cdd6f4 on #313244`, `tab_active #cba6f7`).
+
+Apply:
+
+```bash
+~/.config/omarchy/themes/lavender/apply-filemanager.sh
+# or
+omarchy theme set lavender && nautilus -q
+```
+
+---
+
+## 💻 Terminals — Glassy but No Font Shadow
+
+Fixed `11.png` font background shadow:
+
+- `hyprland shadow 20/3/00000066 → 12/2/00000040`
+- `kitty cursor_trail 4 → 0`
+- Opacities `0.86 → 0.96`, blurs `ghostty 35→10`, `kitty 32→8` — still glassy, no black halo on `#cdd6f4`
+
+---
+
+## 📝 Coding Visibility
+
+`1.png` gray file list fixed: `neovim.lua:19` `muted #6c7086 → #a6adc8`, `Comment italic #6c7086 → #a6adc8` solid, `LineNr #939ab7`, `helix comment #a6adc8` — no dim gray, high contrast for coders. Terminal palette `red #f38ba8` distinct from `magenta #cba6f7`.
+
+---
+
+## 🔄 Migration Table
+
+| Omarchy 3 | Omarchy 4 |
+|-----------|-----------|
+| `colors.toml` 16-color | `colors.toml` 24 keys (`mode`, `hyprland_*`, `bright_*`) |
+| `hyprland.conf` | `hyprland.lua` |
+| `waybar/` | `shell.toml` |
+| `walker/wofi/mako` | Shell |
+| `alacritty/kitty/ghostty/foot` | auto-generated but also kept as glassy `0.96` overrides |
+
+---
+
+## 📁 Structure
+
+```
+lavender/
+├── backgrounds/ 17 wallpapers
+├── colors.toml  shell.toml  hyprland.lua  gum_env.lua  gtk.css
+├── alacritty.toml ghostty.conf kitty.conf foot.ini btop.theme helix.toml neovim.lua
+├── obsidian.css starship.toml chromium.theme keyboard.rgb vscode-theme.json
+├── yazi-theme.toml firefox-userChrome.css vencord.theme.css zed.json tmux.conf lazygit.yml
+├── Stylus.json youtube-lavender.user.less  claude/pi/t3code.json
+└── apply-filemanager.sh  preview.png  screensaver.txt  UPDATE-SCREEN.md
+```
+
+---
+
+## 📜 License
+
+MIT — original lavender + Omarchy 4 port.

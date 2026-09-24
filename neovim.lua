@@ -16,10 +16,11 @@ local colors = {
     danger    = "#f5c2e7",
     warning   = "#c4a0f0",
     info      = "#b4befe",
-    muted     = "#6c7086",
+    muted     = "#a6adc8",
+    muted_dim = "#939ab7",
     dark      = "#0b0b12",
     selection = "#313244",
-    subtle    = "#181825",
+    subtle    = "#1e1e2e",
 }
 
                 vim.cmd("highlight clear")
@@ -35,11 +36,11 @@ local colors = {
                 set_hl("FloatBorder", { fg = colors.border, bg = colors.bg })
                 set_hl("WinSeparator", { fg = colors.border }) -- Orange split lines
                 set_hl("CursorLine", { bg = colors.subtle })   -- Uses subtle for a faint highlight
-                set_hl("LineNr", { fg = colors.muted })
-                set_hl("CursorLineNr", { fg = colors.accent, bold = true }) -- Pink current line
+                set_hl("LineNr", { fg = colors.muted_dim })
+                set_hl("CursorLineNr", { fg = colors.accent, bold = true })
                 set_hl("Visual", { bg = colors.selection })
-                set_hl("Search", { fg = colors.bg, bg = colors.primary }) -- Blue search
-                set_hl("Directory", { fg = colors.primary, bold = true }) -- Standard folders
+                set_hl("Search", { fg = colors.bg, bg = colors.primary })
+                set_hl("Directory", { fg = colors.primary, bold = true })
 
                 -- File Explorers (Neo-tree / NvimTree fixes for the circled area)
                 set_hl("NeoTreeNormal", { fg = colors.fg, bg = colors.bg })
@@ -55,35 +56,37 @@ local colors = {
                 set_hl("NvimTreeFolderName", { fg = colors.primary, bold = true })
                 set_hl("NvimTreeOpenedFolderName", { fg = colors.primary, bold = true })
 
-                -- Syntax (Matched to Omarchy Colors)
-                set_hl("Comment", { fg = colors.muted, italic = true })
-                set_hl("Keyword", { fg = colors.accent, bold = true }) -- Pink Keywords
-                set_hl("Function", { fg = colors.primary, bold = true }) -- Blue Functions
-                set_hl("String", { fg = colors.secondary }) -- Green Strings
-                set_hl("Constant", { fg = colors.purple })
-                set_hl("Number", { fg = colors.warning })
-                set_hl("Type", { fg = colors.warning })
-                set_hl("Operator", { fg = colors.info })
-                set_hl("Identifier", { fg = colors.fg })
-                set_hl("Statement", { fg = colors.accent })
+                -- Syntax — high contrast for coders, no dim gray
+                set_hl("Comment", { fg = "#a6adc8", italic = false })
+                set_hl("Keyword", { fg = colors.accent, bold = true })
+                set_hl("Function", { fg = "#89b4fa", bold = true })
+                set_hl("String", { fg = "#a6e3a1" })
+                set_hl("Constant", { fg = "#f9e2af" })
+                set_hl("Number", { fg = "#fab387" })
+                set_hl("Type", { fg = "#89b4fa", bold = true })
+                set_hl("Operator", { fg = "#94e2d5" })
+                set_hl("Identifier", { fg = "#cdd6f4" })
+                set_hl("Statement", { fg = "#cba6f7", bold = true })
 
                 -- Pmenu (Completions)
                 set_hl("Pmenu", { fg = colors.fg, bg = colors.dark })
                 set_hl("PmenuSel", { fg = colors.bg, bg = colors.accent }) -- Purple selection
 
-                -- Diagnostics
-                set_hl("DiagnosticError", { fg = colors.danger })
-                set_hl("DiagnosticWarn", { fg = colors.warning })
-                set_hl("DiagnosticInfo", { fg = colors.info })
-                set_hl("DiagnosticHint", { fg = colors.muted })
+                -- Diagnostics — bright, not gray
+                set_hl("DiagnosticError", { fg = "#f38ba8", bold = true })
+                set_hl("DiagnosticWarn", { fg = "#f9e2af", bold = true })
+                set_hl("DiagnosticInfo", { fg = "#89b4fa" })
+                set_hl("DiagnosticHint", { fg = "#94e2d5" })
 
-                -- Treesitter Links
-                set_hl("@variable", { fg = colors.fg })
-                set_hl("@property", { fg = colors.info })
-                set_hl("@parameter", { fg = colors.warning, italic = true })
-                set_hl("@constructor", { fg = colors.primary })
-                set_hl("@tag", { fg = colors.accent })
-                set_hl("@tag.delimiter", { fg = colors.muted })
+                -- Treesitter — vivid
+                set_hl("@variable", { fg = "#cdd6f4" })
+                set_hl("@property", { fg = "#89b4fa" })
+                set_hl("@parameter", { fg = "#fab387", italic = false })
+                set_hl("@constructor", { fg = "#cba6f7", bold = true })
+                set_hl("@tag", { fg = "#cba6f7", bold = true })
+                set_hl("@tag.delimiter", { fg = "#a6adc8" })
+                set_hl("@comment", { fg = "#a6adc8" })
+                set_hl("NonText", { fg = "#939ab7" })
 
                 vim.g.colors_name = "omarchy"
             end,
