@@ -37,6 +37,14 @@ omarchy theme install https://github.com/hembramnishant50-glitch/omarchy-lavende
 
 > Lua files (`hyprland.lua`, `neovim.lua`, `gum_env.lua`) are blocked for git-installed themes — the `rm -rf .git` makes the theme yours so Hyprland/Neovim/Gum use lavender.
 
+## 🗑️ Remove File Manager Theme
+
+```bash
+~/.config/omarchy/themes/lavender/remove-gtk.sh
+# manual:
+rm ~/.config/gtk-3.0/gtk.css ~/.config/gtk-4.0/gtk.css && nautilus -q
+```
+
 ---
 
 ## 📜 License
