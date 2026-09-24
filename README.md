@@ -97,6 +97,7 @@ omarchy theme install https://github.com/hembramnishant50-glitch/omarchy-lavende
 | `Stylus.json` / `youtube-lavender.user.less` | 136 userstyles lavender |  |
 | `backgrounds/` | 17 wallpapers |  |
 | `apply-filemanager.sh` | One-click `omarchy theme set + nautilus -q + yazi flavor` |  |
+| `remove-gtk.sh` | Remove GTK tint — restores default file-manager (`rm gtk-3.0/4.0`) |  |
 
 > **Deleted from Omarchy 3:** `waybar/`, `walker.css`, `wofi.css`, `mako.ini`, `swayosd.css` — replaced by Shell. Originals remain in `git log`.
 
@@ -123,6 +124,15 @@ Apply:
 ~/.config/omarchy/themes/lavender/apply-filemanager.sh
 # or
 omarchy theme set lavender && nautilus -q
+```
+
+**Remove GTK file-manager tint (back to default Omarchy):**
+
+```bash
+~/.config/omarchy/themes/lavender/remove-gtk.sh
+# or manually:
+rm ~/.config/gtk-3.0/gtk.css ~/.config/gtk-4.0/gtk.css && nautilus -q
+# to keep lavender theme but without GTK: mv gtk.css gtk.css.disabled && omarchy theme set lavender
 ```
 
 ---
@@ -165,7 +175,7 @@ lavender/
 ├── obsidian.css starship.toml chromium.theme keyboard.rgb vscode-theme.json
 ├── yazi-theme.toml firefox-userChrome.css vencord.theme.css zed.json tmux.conf lazygit.yml
 ├── Stylus.json youtube-lavender.user.less  claude/pi/t3code.json
-└── apply-filemanager.sh  preview.png  screensaver.txt  UPDATE-SCREEN.md
+└── apply-filemanager.sh  remove-gtk.sh  preview.png  screensaver.txt  UPDATE-SCREEN.md
 ```
 
 ---
