@@ -35,8 +35,6 @@ rm -rf ~/.config/omarchy/themes/lavender/.git && omarchy theme set lavender
 omarchy theme install https://github.com/hembramnishant50-glitch/omarchy-lavender-theme.git && rm -rf ~/.config/omarchy/themes/lavender/.git && omarchy theme set lavender
 ```
 
-> Lua files (`hyprland.lua`, `neovim.lua`, `gum_env.lua`) are blocked for git-installed themes — the `rm -rf .git` makes the theme yours so Hyprland/Neovim/Gum use lavender.
-
 ## 🗑️ Remove File Manager Theme
 
 ```bash
