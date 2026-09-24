@@ -20,6 +20,15 @@
 
 ---
 
+## 🖥️ Theme Preview
+
+| Btop | Files |
+|------|-------|
+| <img src="preview-btop.png" width="100%" style="border-radius:10px;"/> | <img src="preview-files.png" width="100%" style="border-radius:10px;"/> |
+| <img src="preview-btop2.png" width="100%" style="border-radius:10px;"/> | <img src="preview-update.png" width="100%" style="border-radius:10px;"/> |
+
+---
+
 ## ⚡ Quick Install
 
 ```bash
