@@ -48,7 +48,7 @@ white = "#a6adc8"
 
 [window]
 padding = { x = 10, y = 10 }
-opacity = 0.96
+opacity = 0.92
 decorations = "none"
 blur = true
 dynamic_padding = true
