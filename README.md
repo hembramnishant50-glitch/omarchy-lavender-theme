@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="preview.png" width="80%" />
+  <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/e7e6ad20-9daa-403c-a249-9971192c75dc" />
 </p>
 
 <h1 align="center">✨ Omarchy Lavender — Omarchy 4 ✨</h1>
@@ -90,6 +90,8 @@ gsettings set org.gnome.desktop.interface cursor-theme 'Catppuccin-Mocha-Mauve-C
 ---
 
 ## 🖼️ Wallpapers — 19 Lavender Showcase
+
+> For more wallpapers checkout this 👉 https://github.com/hembramnishant50-glitch/catppuccin-wallpapers
 
 <table>
 <tr>
