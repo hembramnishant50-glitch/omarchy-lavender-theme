@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/e7e6ad20-9daa-403c-a249-9971192c75dc" />
+  <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/318eb456-73dc-4a24-ae36-1790750e2590" />
 </p>
 
 <h1 align="center">✨ Omarchy Lavender — Omarchy 4 ✨</h1>
@@ -22,10 +22,11 @@
 
 ## 🖥️ Theme Preview
 
-| Btop | Files |
-|------|-------|
-| <img src="preview-btop.png" width="100%" style="border-radius:10px;"/> | <img src="preview-files.png" width="100%" style="border-radius:10px;"/> |
-| <img src="preview-btop2.png" width="100%" style="border-radius:10px;"/> | <img src="preview-update.png" width="100%" style="border-radius:10px;"/> |
+| Preview | Preview |
+|---------|---------|
+| <img src="https://github.com/user-attachments/assets/97722e7b-cb09-4853-a079-2055b012bf99" width="100%" style="border-radius:10px;"/> | <img src="https://github.com/user-attachments/assets/3e1469cd-4338-4699-abe5-397f99c496cb" width="100%" style="border-radius:10px;"/> |
+| <img src="https://github.com/user-attachments/assets/46170dc4-a737-4064-82d8-ce5258b8bfe7" width="100%" style="border-radius:10px;"/> | <img src="https://github.com/user-attachments/assets/4c6511bd-6739-4605-a570-1c1be7784720" width="100%" style="border-radius:10px;"/> |
+| <img src="https://github.com/user-attachments/assets/4051676a-10d6-42e0-b25c-7e8b6057897d" width="100%" style="border-radius:10px;"/> |  |
 
 ---
 
